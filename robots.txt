@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://cow-coding.github.io/sitemap.xml
