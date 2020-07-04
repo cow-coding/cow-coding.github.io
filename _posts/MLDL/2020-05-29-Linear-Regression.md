@@ -56,7 +56,7 @@ $$ b = b - \frac{\partial MSE}{\partial b}
 = b + (y - \widehat{y}) $$  
 이렇게 손실함수에 대해서 변화율을 처리해주는 것을 **그래디언트(Gradient)** 라고 한다.
 
-# Linear Regression Coding
+# Linear Regression implementation
 ## Initialized Code
 ```python
 class LinearRegression:
