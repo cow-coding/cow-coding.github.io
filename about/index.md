@@ -14,12 +14,16 @@ type: about
 
 ## Programming Skill
 ### Computer Science
-- Algorithm : C++&nbsp;/ Java&nbsp;/ Python
-- Database : MySQL&nbsp; / PostgreSQL
+- Programming : C++&nbsp; / Python&nbsp;/ JAVA
+- Algorithm : C++&nbsp;
+- Database : MySQL&nbsp; / PostgreSQL&nbsp; / MongoDB
 - Web : HTML5&nbsp;/ CSS&nbsp;/ JSP&nbsp; / PHP
 
 ### Statistics
 - Data Analysis : R&nbsp;/ Python
+
+### ML / DL
+- Orange 3
 
 ### Others
 - Application : Swift
