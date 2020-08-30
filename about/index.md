@@ -1,37 +1,48 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About Me
+date: 2020-08-30
 comments: false
 ---
-    
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+<center>Welcome to the <a href="http://cow-coding.github.io/"><b>Cow-coding blog</b></a></center>
 
-## Preview
+## 박기범 (Park Ki-Bum / Cow-coding)
+* 1997.05.06
+* Bachelor
+  * Inha Univ. Compute Science Engineering  
+  2019 ~
+  * Inha Univ. CSE and Statistics (Data Analytics)  
+  2020 ~
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+## Programming
 
-## Getting Started
+#### Problem Solving
+- C++
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+#### Database
+- MySQL
+- MariaDB
+- MongoDB
+
+#### Front-End
+- HTML
+- CSS
+- JavaScript
+
+#### Back-End
+- PHP
+- Spring / Spring Boot
+- AWS
+
+#### Data Science & ML
+- Python
+- tensorflow
+
+#### ETC
+- Swift
+
+## Project
+- 2020.08 ~ 2020.10  
+Medipush (공개 소프트웨어 개발자 대회)
