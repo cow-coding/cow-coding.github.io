@@ -134,6 +134,10 @@ pre,
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
+  @media #{$small} {
+    font-size: 0.85em;
+    tab-size: 2.5;
+	}
 }
 
 figure {

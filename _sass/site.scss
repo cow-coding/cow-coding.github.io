@@ -42,6 +42,8 @@ body {
 	color: $white;
 	@media #{$small} {
 		display: block !important;
+		// 아이폰에서 바깥 영역 클릭시 dlmenu 닫기 클릭 이벤트 문제 해결
+		cursor: pointer;
 	}
 	@media only screen and (max-height: 500px) {
 	    display: block !important;
@@ -111,7 +113,7 @@ body {
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
 	@include transition(.5s);
 	@media #{$small} {
-		width: 90%;
+		width: 95%;
 		padding: 2em 0;
 	    box-shadow: none;
 	}
