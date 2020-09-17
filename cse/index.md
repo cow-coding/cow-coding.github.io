@@ -1,6 +1,6 @@
 ---
 layout: cse
 title: Computer Science
-excerpt: "Shcool Computer Science"
+excerpt: "Computer Science Theory"
 comments: false
 ---

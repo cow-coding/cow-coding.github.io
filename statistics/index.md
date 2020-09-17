@@ -1,6 +1,6 @@
 ---
 layout: statistics
 title: Statistics
-excerpt: "Shcool Statistics"
+excerpt: "Statistics Theory"
 comments: false
 ---

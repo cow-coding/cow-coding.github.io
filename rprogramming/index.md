@@ -1,6 +1,6 @@
 ---
 layout: rprogramming
 title: R programming
-excerpt: "A List of R Posts"
+excerpt: "Basis of R programming"
 comments: false
 ---
