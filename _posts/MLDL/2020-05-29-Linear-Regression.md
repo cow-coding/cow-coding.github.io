@@ -9,6 +9,11 @@ tags:
 - 선형회귀
 - 경사하강법
 ---
+
+* TOC
+{:toc}
+{: .toc }
+
 # Linear Regression (선형회귀)
 ## Linear Regression (선형회귀)란?
 - 보통 딥러닝 최적화 학습 알고리즘 중 가장 기초가 되는 알고리즘이다.
