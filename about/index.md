@@ -45,4 +45,4 @@ comments: false
 
 ## Project
 - 2020.08 ~ 2020.10  
-Medipush (공개 소프트웨어 개발자 대회)
+[Medipush](https://github.com/Medipush) (공개 소프트웨어 개발자 대회)
