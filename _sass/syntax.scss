@@ -33,21 +33,6 @@ code {
 	    right: 0;
 	  }
 
-	  > code {
-	    display: inline-block;
-	    padding: 20px!important;
-	    background-color: transparent;
-	    border: 0;
-	  }
-
-	  table, pre {
-	    margin-bottom: 0;
-
-	    .gutter, .code {
-	      padding: 6px;
-	      border: none;
-	    }
-	  }
 	}
 	.lineno            { padding-right: 24px; color: lighten(#49483e,50);}
 	.hll               { background-color: #49483e}
