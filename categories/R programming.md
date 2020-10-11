@@ -1,4 +1,4 @@
 ---
 layout: category
-title: R Programming
+title: R programming
 ---
