@@ -1,11 +1,9 @@
 ---
 title: PL - 프로그래밍 언어의 패러다임
 date: 2020-10-11
-pl: true
-excerpt: "프로그래밍 언어의 흐름"
-tags:
-- Programming Language
-- Paradigm
+categories: Programming-Language Computer-Science
+tags: [Programming-Language, Paradigm]
+
 ---
 * TOC
 {:toc}
