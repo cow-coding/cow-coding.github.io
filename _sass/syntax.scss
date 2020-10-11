@@ -2,6 +2,12 @@ pre.highlight {
 	padding: 1em;
 }
 
+code {
+	&[data-lang]::before {
+		content: attr(data-lang);
+	}
+}
+
 .highlight {
 	background-color: #49483e;
 	font-family: $font2;
