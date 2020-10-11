@@ -1,4 +1,4 @@
 ---
 layout: category
-title: 통계학
+title: R Programming
 ---

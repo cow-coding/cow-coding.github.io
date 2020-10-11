@@ -1,7 +1,7 @@
 ---
 title: Linear Regression (선형회귀)
 date: 2020-05-29
-categories: [ML, 컴퓨터 공학]
+categories: [Machine Learning, Computer Science]
 tags:
 - Deep_Learning
 - Linear_Regression
