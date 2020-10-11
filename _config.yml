@@ -1,127 +1,76 @@
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site
+title:              소의 코딩 갤러리
+bio:                'Project, Back-end, DataScience'
+description:        "코딩하는 소의 코딩 갤러리입니다."
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/logo.png'
+background:         'assets/img/placeholder-big.jpg'
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             en_US
+url:                https://cow-coding.github.io
 
-title: 소의 코딩갤러리
+# Jekyll
+permalink:          /:categories/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Comments
+disqus_shortname:   cow-coding
+
+# Social
+# if you don't have any of social below, comment the line.
+#google:
+  #plus:            #username
+  #analytics:
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
 email: kbp0237@gmail.com
-author: Kibum Park
-copyright: Copyright © 2020-
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+#twitter:            username
+#facebook:           username
+github-url:         cow-coding
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+#linkedin:          username
+#xing:              username
+instagram:          kibum56
+#lastfm:            username
+#tumblr:            username
+#medium:            '@username'
+#pinterest:         username
+#foursquare:        username
+#steam:              username
+#dribbble:          username
+#youtube:           username
+#youtube-channel:   channel
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cow-coding.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-favicon: "" # the favicon for your site
-
-# Yat date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-yat:
-  date_format: "%b %d, %Y"
-
-# If you want more debug log, you can set true
-# debug: false
-
-# If you don't want transparent header, you can set false
-# header_transparent: true
-
-# Google analytics
-# google_analytics: [Tracking ID]
-
-# If you want to generate website sitemap, you can set true
-# sitemap: false
-
-# If you want to change site language, you can set lang option
-lang: "ko"  # default lang is en
-
-# Translate languges
-# langs refer to https://cloud.google.com/translate/docs/languages
-# translate_langs:
-#   - lang: en
-#     text: English
-#
-#   - lang: fr
-#     img: https://www.countryflags.io/fr/flat/64.png
-#     text: Franch
-#
-#   - lang: zh-CN
-#     img: https://www.countryflags.io/cn/flat/64.png
-#     text: Chinese(Simple)
-#
-#   - lang: zh-TW
-#     img: https://www.countryflags.io/tw/flat/64.png
-#     text: Chinese(Traditional)
-#
-#   - lang: ja
-#     img: https://www.countryflags.io/jp/flat/64.png
-#     text: Japan
-#
-#   - lang: ko
-#     img: https://www.countryflags.io/kr/flat/64.png
-#     text: Korean
-#
-#   - lang: ru
-#     img: https://www.countryflags.io/ru/flat/64.png
-#     text: Russia
-
-# You can choose a theme color
-# Default theme colors as below:
-# coolblack: #090a0b
-# spacegrey: #353535
-# snowwhite: #ffffff
-#
-# theme_color: snowwhite
-#
-# Custom color as below:
-# theme_color: "#882250"
-
-# Night mode, default is "auto", "auto" is for auto nightshift (19:00 - 07:00),
-# "manual" is for manual toggle, and "on/off" is for always on/off.
-# night_mode: "auto"
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
-
-# Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
-
-# Pagination setting
-# paginate: 5
-
-# Disqus comments
-# disqus:
-#   shortname: "Your Disqus username"
-
-# Gitment comments
-# gitment:
-#   username: "Your GitHub username"
-#   repo: "The repo to store comments"
-#   client_id: "Your client ID"
-#   client_secret: "Your client secret"
-#   redirect_uri: "Your redirect url"   # If you use a custom domain name
-
-# Build settings
-# highlighter: none
-markdown: kramdown
-kmarkdown:
-  input: GFM
-
-plugins:
+# Gems
+gems:
+  - jekyll-mentions
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-spaceship
+  - jekyll-gist
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
