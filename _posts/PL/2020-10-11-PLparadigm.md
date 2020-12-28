@@ -1,7 +1,7 @@
 ---
 title: PL - 프로그래밍 언어의 패러다임
 date: 2020-10-11
-categories: [Programming Language, Computer-Science]
+categories: [Programming Language, Computer Scienceence]
 excerpt: 프로그래밍 패러다임
 tags:
   - Programming-Language
