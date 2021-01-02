@@ -1,7 +1,7 @@
 ---
 title: PL - 프로그래밍 언어의 패러다임
 date: 2020-10-11
-categories: [Programming Language, Computer Scienceence]
+categories: [Programming Language, Computer Sciencence]
 excerpt: 프로그래밍 패러다임
 tags:
   - Programming-Language
@@ -163,4 +163,4 @@ public static void main(String[] args) {
 
 Old style의 함수형 프로그래밍은 따로 sub program을 만들어서 작성을 했다. 실제로 아직도 많은 함수들이 Old style과 같은 형식으로 작성하고 있다.  
 요즘 들어서 가장 많이 지원되고 있는 방식인 람다($$\lambda$$)식 방식을 활용한 것이 Modern Style이다.  
-확실하게 명령형과 비교를 해보면 눈에 띄는 것들이 있다. 프로그래밍에서 필요한 부분들만 구현을하고 추가적인 메모리할당을 줄였다. 메모리 관리를 중점으로 두는 Java와 C++같은 언어들도 이제는 람다식을 지원하게 되어서 좀 더 함수형 프로그래밍에 가까운 코딩을 할 수 있게 되었다. 
+확실하게 명령형과 비교를 해보면 눈에 띄는 것들이 있다. 프로그래밍에서 필요한 부분들만 구현을하고 추가적인 메모리할당을 줄였다. 메모리 관리를 중점으로 두는 Java와 C++같은 언어들도 이제는 람다식을 지원하게 되어서 좀 더 함수형 프로그래밍에 가까운 코딩을 할 수 있게 되었다.
