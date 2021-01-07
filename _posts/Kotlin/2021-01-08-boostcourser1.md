@@ -1,7 +1,7 @@
 ---
 title: [boostcourse] About Kotlin (코틀린은 어떤 언어인가?)
 date: 2021-01-08
-categories: [Kotlin, boostcourse, Computer Science]
+categories: [Kotlin, Boost Course, Computer Science]
 tags:
 - Kotlin
 - boostcourse

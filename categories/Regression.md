@@ -1,4 +1,4 @@
 ---
 layout: category
-title: Linear Regression
+title: Regression
 ---
