@@ -106,4 +106,4 @@ src폴더에 코틀린 파일을 만들어주자.
 ![](/image/boostcourse/day1/start7.png)
 이제 아주 기본적인 코틀린 입문을 시작한 것이다! 축하한다!
 
-![](/image/boostcourse/nametag.png)
+<img src="/image/boostcourse/nametag.png" style="width:500px">

@@ -121,4 +121,4 @@ fun main() {
 
 이렇게 코틀린의 Null처리 방식을 알아봤다. 다음에는 자료형 변환과 연산자 조합을 통한 다양한 식을 만들어 볼 예정이다.
 
-![](/image/boostcourse/nametag.png)
+<img src="/image/boostcourse/nametag.png" style="width:500px">
