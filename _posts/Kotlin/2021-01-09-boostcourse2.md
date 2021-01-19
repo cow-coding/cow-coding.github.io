@@ -127,6 +127,7 @@ fun main() {
   println("str1 === str3: ${str1 === str3}")
 }
 ```
+
 위 코드로 간단하게 String의 특성을 설명해보겠다.  
 보통 String을 저장할 때 String Pool이라는 공간에 저장하는데, 데이터 관리의 효율을 위해서 동일한 값은 중복해서 저장하지 않고 해당 값이 저장된 주소를 가리키게 된다.
 
@@ -134,4 +135,4 @@ fun main() {
 
 이런 String Pool을 활용한 방식은 메모리 관리의 효율성을 높여줄 수 있다. 이런 장점이 어떻게 보면 코틀린이 자바보다 효율적인 이유가 아닐까 생각된다. ~~(자바도 이렇게 돌아가는 지는 잘 모릅니다...)~~
 
-![](/image/boostcourse/nametag.png) 
+![](/image/boostcourse/nametag.png)
