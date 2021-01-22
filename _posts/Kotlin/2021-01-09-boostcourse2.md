@@ -1,5 +1,5 @@
 ---
-title: "[boostcourse] Kotlin의 구조와 자료형"
+title: "[boostcourse] Kotlin기본 - Kotlin의 구조와 자료형"
 date: 2021-01-09
 categories: [Kotlin, Boost Course, Computer Science]
 tags:

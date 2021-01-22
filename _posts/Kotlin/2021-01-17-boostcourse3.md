@@ -1,5 +1,5 @@
 ---
-title: "[boostcourse] Kotlin의 Null 처리"
+title: "[boostcourse] Kotlin기본 - Kotlin의 Null 처리"
 date: 2021-01-17
 categories: [Kotlin, Boost Course, Computer Science]
 tags:
@@ -34,7 +34,7 @@ Null은 개발자들을 끊임없이 괴롭혀 온 징글징글한 녀석이다.
 이런 끔찍한 에러를 보기 싫다면 Null 처리를 확실하게 해줘야한다. 위의 에러는 Null로 발생하는 대표적인 에러인 Null Pointer Exception(NPE)이다.
 
 # Kotlin의 Nullable
-첫번째 포스트에서 코틀린의 최고 장점을 Nullable이라고 했었다. 즉 null값 발생시 자동적으로 null처리를 하는 방식을 지원해준다.  
+[첫번째 포스트](https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourser1/)에서 코틀린의 최고 장점을 Nullable이라고 했었다. 즉 null값 발생시 자동적으로 null처리를 하는 방식을 지원해준다.  
 하지만 그 전에 코틀린은 변수를 선언할 때, null을 허용하지 않는다. 변수를 선언하면 반드시 초기화를 해줘야한다. 만약 초기화를 하지 않는다면 기본적으로 에러로 나타내어 컴파일이 되지 않는다.  
 ```kotlin
 // 변수 선언 예
