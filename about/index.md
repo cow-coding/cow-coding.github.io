@@ -6,7 +6,7 @@ comments: false
 ---
 
 <style>
-link {
+img {
   align="left"
 }
 </style>
