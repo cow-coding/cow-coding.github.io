@@ -120,4 +120,11 @@ fun main() {
 
 이렇게 코틀린의 Null처리 방식을 알아봤다. 다음에는 자료형 변환과 연산자 조합을 통한 다양한 식을 만들어 볼 예정이다.
 
+<div class="txc-textbox" style="border: 1px solid #eeeeee; background-color: #eeeeee; padding: 10px;" markdown="1">
+<p style="text-align: center;">&lt; BoostCourse Suppoters 3rd - Kotlin &gt;</p>
+<a link="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourser1/">[boostcourse] Kotlin기본 - Kotlin은 어떤 언어인가?</a><br>
+<a link="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourse2/">[boostcourse] Kotlin기본 - Kotlin의 구조와 자료형</a><br>
+</div>
+<br>
+
 <img src="/image/boostcourse/nametag.png" style="width:500px">

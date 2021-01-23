@@ -135,4 +135,11 @@ fun main() {
 
 이런 String Pool을 활용한 방식은 메모리 관리의 효율성을 높여줄 수 있다. 이런 장점이 어떻게 보면 코틀린이 자바보다 효율적인 이유가 아닐까 생각된다. ~~(자바도 이렇게 돌아가는 지는 잘 모릅니다...)~~
 
+<div class="txc-textbox" style="border: 1px solid #eeeeee; background-color: #eeeeee; padding: 10px;" markdown="1">
+<p style="text-align: center;">&lt; BoostCourse Suppoters 3rd - Kotlin &gt;</p>
+<a link="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourser1/">[boostcourse] Kotlin기본 - Kotlin은 어떤 언어인가?</a><br>
+</div>
+<br>
+
+
 <img src="/image/boostcourse/nametag.png" style="width:500px">

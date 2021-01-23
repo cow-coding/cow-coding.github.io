@@ -180,5 +180,13 @@ fun demo(x: Any) {
 ```
 `is`연산자를 활용하면 현재 확인하는 변수가 내가 확인하고자 하는 자료형이 맞는지 혹은 캐스팅이 가능한지를 알려준다. 이 연산자를 스마트 캐스트 자료형과 사용하면 `is`연산자를 통과한 변수는 해당 자료형으로 자료형을 캐스팅해준다.
 
+<div class="txc-textbox" style="border: 1px solid #eeeeee; background-color: #eeeeee; padding: 10px;" markdown="1">
+<p style="text-align: center;">&lt; BoostCourse Suppoters 3rd - Kotlin &gt;</p>
+<a link="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourser1/">[boostcourse] Kotlin기본 - Kotlin은 어떤 언어인가?</a><br>
+<a link="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourse2/">[boostcourse] Kotlin기본 - Kotlin의 구조와 자료형</a><br>
+<a link="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourse3/">[boostcourse] Kotlin기본 - Kotlin의 Null 처리<br>
+</div>
+<br>
+
 
 <img src="/image/boostcourse/nametag.png" style="width:500px">
