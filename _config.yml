@@ -32,7 +32,7 @@ disqus_shortname:   cow-coding
 # if you don't have any of social below, comment the line.
 google:
   #plus:            #username
-  analytics: UA-163727422-1
+  analytics: 'UA-163727422-1'
   #verify:
   #ad-client:
   #ad-slot:
