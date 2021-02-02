@@ -1,5 +1,5 @@
 ---
-title: Regression - 회귀분석을 시작하며...
+title: "[Regression] 회귀분석을 시작하며..."
 date: 2021-01-05
 categories: [Regression, Statistics]
 excerpt: 회귀분석을 시작해보자

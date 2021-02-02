@@ -1,5 +1,5 @@
 ---
-title: Linear Regression (선형회귀)
+title: "[ML/DL] Linear Regression (선형회귀)"
 date: 2020-05-29
 categories: [Machine Learning, Computer Science]
 tags:
