@@ -167,4 +167,18 @@ class Jayce {
 ```
 메소드에도 `open`키워드를 붙이면 override를 선언해주는 것이다.  
 파생 클래스에서 더이상 오버라이딩을 금지시킬 수 있다.  
-`override`키워드 앞에 `final`을 붙이면 하위 클래스에서 재정의를 금지시킬 수 있다.
+`override`키워드 앞에 `final`을 붙이면 하위 클래스에서 재정의를 금지시킬 수 있다.  
+
+<div class="txc-textbox" style="border: 1px solid #eeeeee; background-color: #eeeeee; padding: 10px;" markdown="1">
+<p style="text-align: center;">&lt; BoostCourse Suppoters 3rd - Kotlin &gt;</p>
+<a href="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourser1/">[boostcourse] Kotlin기본 - Kotlin은 어떤 언어인가?</a><br>
+<a href="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourse2/">[boostcourse] Kotlin기본 - Kotlin의 구조와 자료형</a><br>
+<a href="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourse3/">[boostcourse] Kotlin기본 - Kotlin의 Null 처리<br>
+<a href="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourse4/">[boostcourse] Kotlin기본 - Kotlin의 자료형 변환과 확인<br>
+<a href="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourse5/">[boostcourse] Kotlin기본 - Kotlin의 함수형 프로그래밍<br>
+<a href="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourse6/">[boostcourse] Kotlin기본 - Kotlin의 제어문<br>
+<a href="https://cow-coding.github.io/kotlin/boost%20course/computer%20science/boostcourse7/">[boostcourse] Kotlin기본 - Kotlin의 객체 지향 프로그래밍<br>
+</div>
+<br>
+
+<img src="/image/boostcourse/nametag.png" style="width:500px">
