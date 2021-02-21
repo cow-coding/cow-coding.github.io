@@ -1,6 +1,6 @@
 ---
-title: "[boostcourse] Kotlin기본 - Kotlin의 상속"
-date: 2021-02-16
+title: "[boostcourse] Kotlin기본 - Kotlin의 다형성"
+date: 2021-02-21
 categories: [Kotlin, Boost Course, Computer Science]
 tags:
 - Kotlin
