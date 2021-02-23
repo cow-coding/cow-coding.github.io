@@ -3,7 +3,7 @@ layout: post
 title: "[boostcourse] Kotlin기본 - Kotlin의 다형성"
 categories: kotlin
 tags:
-- bc kotlin '부스트 코스 서포터즈 3기' '코틀린 프로그래밍 기본 1'
+- bc 부스트 코스 서포터즈 3기 코틀린 프로그래밍 기본 1
 ---
 
 <style>
