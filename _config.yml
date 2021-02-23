@@ -1,76 +1,130 @@
-# Site
-title:              소의 코딩 갤러리
-bio:                'Project, Back-end, DataScience'
-description:        "코딩하는 소의 코딩 갤러리입니다."
-reading_time:       true
-words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
-url:                https://cow-coding.github.io
+# -----------------------------------------------------------------------------
+#  User configuration
+# -----------------------------------------------------------------------------
 
-# Jekyll
-permalink:          /:categories/:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
-sass:
-  sass_dir:         _sass
-  style:            compressed
+title:              Coding Gallery
 
-# Comments
-disqus_shortname:   cow-coding
+# The unique resource location of your page.
+# Set to `https://<username>.github.io` when hosting on GitHub Pages
+url:                 https://cow-coding.github.io
 
-# Social
-# if you don't have any of social below, comment the line.
-google:
-  #plus:            #username
-  analytics: 'UA-163727422-1'
-  #verify:
-  #ad-client:
-  #ad-slot:
-#bing-verify:
-email: kbp0237@gmail.com
-#twitter:            username
-#facebook:           username
-github-url:         cow-coding
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-instagram:          kibum56
-#lastfm:            username
-#tumblr:            username
-#medium:            '@username'
-#pinterest:         username
-#foursquare:        username
-#steam:              username
-#dribbble:          username
-#youtube:           username
-#youtube-channel:   channel
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
+# Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
+# Set to '/<reponame>' when using the `gh-pages` branch of a repository
+baseurl:             ""
 
-# Gems
+# A very short description of your page
+tagline:             소의 코딩 갤러리
+
+# A short description of the page, used in the sidebar and as fallback for the meta description tag.
+# Markdown enabled, but don't use more than one paragraph (enforced by `>`)
+description:         >
+  뭔가를 빨리하는 건 잘 못하지만 확실하게 하는건 잘하는 사람
+  가끔은 심심해서 코딩을 하기도 하는 개발자
+
+# This should be the same author as first entry in `_data/authors.yml`
+author:
+  name:              kibum park
+  email:             kbp0237@gmail.com
+
+# Fallback image and color
+image:               /assets/img/logo.png
+color:               '#4f86aa'
+
+# The font used for headings. Expects a string that is a valid CSS font-family value.
+font_heading:        "'Lato', 'Sans-serif'"
+
+# The text font. Expects a string that is a valid CSS font-family value.
+font:                "'Lato', 'Sans-serif'"
+
+# The string encoding what fonts to fetch from Google Fonts.
+# See: https://qwtel.com/hydejack/docs/configuration/
+google_fonts:        Lato
+
+# If you do not use a Google Fonts, uncomment the line below
+# no_google_fonts:     true
+
+# Set your Google Analytics id to receive `pageview` events.
+# To remove Google Anaylics from your page, remove the line below.
+google_analytics:    UA-163727422-1
+
+# Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
+disqus_shortname:    cow-coding
+
+# This text will appear in the footer of every page. Markdown enabled.
+copyright:           '&copy; 2019. by kbp0237'
+
+# Format of the permalinks
+permalink:           pretty
+
+# Pagination configuration (used by the `blog` layout)
+paginate:            8
+paginate_path:       '/page-:num/'
+
+# If you are upgrading form a v5 verison of Hydejack, uncomment the two lines below,
+# so that the location of the feed XML stays the same.
+# feed:
+#   path:              atom.xml
+
+# Set to true when building with the `--lsi` option
+# See: https://jekyllrb.com/docs/variables/#site-variables
+# use_lsi:             true
+
+# Set to `true` if you don't want to show an icon after each link that opens to an external site
+# no_mark_external:    true
+
+# Uncomment this line if third party plugins fail to work with dynimically loaded pages
+# disable_push_state:  true
+
+# Uncomment this line if want to disable the touch drawer on mobile
+# disable_drawer: true
+
+# -----------------------------------------------------------------------------
+#  Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  featured_categories:
+    permalink:       /category/:name/
+    output:          true
+  featured_tags:
+    permalink:       /tag/:name/
+    output:          true
+  projects:
+    permalink:       /projects/:path/
+    output:          true
+
+# -----------------------------------------------------------------------------
+#  Advanced configuration
+# -----------------------------------------------------------------------------
+
 gems:
-  - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-redirect-from
 
-jekyll-mentions:
-    base_url: https://github.com
+exclude:
+  - README.md
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
 
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+kramdown:
+  footnote_backlink: '&#x21a9;&#xfe0e;'
+  math_engine:       mathjax
+  math_engine_opts:
+    preview:         true
+    preview_as_code: true
+
+compress_html:
+  comments:          ["<!-- ", " -->"]
+  clippings:         all
+  endings:           all
+  ignore:
+    envs:            [development]
+
+sass:
+  style:             compressed
