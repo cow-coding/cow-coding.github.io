@@ -27,7 +27,7 @@ author:
   email:             kbp0237@gmail.com
 
 # Fallback image and color
-image:               /assets/img/logo.png
+image:               /assets/img/bg.png
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
