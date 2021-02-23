@@ -2,8 +2,7 @@
 layout: post
 title: "[boostcourse] Kotlin기본 - Kotlin의 구조와 자료형"
 categories: kotlin
-tags:
-- bc 부스트_코스_서포터즈_3기 코틀린_프로그래밍_기본_1
+tags: bc 부스트_코스_서포터즈_3기 코틀린_프로그래밍_기본_1
 ---
 
 <style>
