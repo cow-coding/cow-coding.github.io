@@ -2,7 +2,7 @@
 layout: post
 title: "[boostcourse] Kotlin기본 - Kotlin은 어떤 언어인가?"
 categories: kotlin
-tags: bc ,boostcourse suppoters 3rd ,kotlin basic 1
+tags: bc 'boostcourse suppoters 3rd' 'kotlin basic 1'
 ---
 
 <style>
