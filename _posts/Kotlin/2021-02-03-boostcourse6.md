@@ -3,7 +3,7 @@ layout: post
 title: "[boostcourse] Kotlin기본 - Kotlin의 제어문"
 categories: kotlin
 tags:
-- boostcourse kotlin '부스트 코스 서포터즈 3기' '코틀린 프로그래밍 기본 1'
+- bc kotlin '부스트 코스 서포터즈 3기' '코틀린 프로그래밍 기본 1'
 ---
 
 <style>
