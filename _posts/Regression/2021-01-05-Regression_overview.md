@@ -1,13 +1,7 @@
 ---
 title: "[Regression] 회귀분석을 시작하며..."
-date: 2021-01-05
-categories: [Regression, Statistics]
-excerpt: 회귀분석을 시작해보자
-tags:
-  - Linear Regression
-  - Regression
-  - Statistics
-
+categories: statistics
+tags: regression Linear_Regression Statistics
 ---
 <style>
 img {
@@ -16,10 +10,6 @@ img {
   margin:0px auto;
 }
 </style>
-
-* TOC
-{:toc}
-{: .toc }
 
 # 시작하며
 회귀분석은 통계학에서는 굉장히 중요한 분석방법이고 이제는 통계학을 넘어서서 컴퓨터공학의 머신러닝, 딥러닝, 데이터사이언스 분야에는 필수적인 요소가 되었다.  
