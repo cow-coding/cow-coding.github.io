@@ -1,18 +1,8 @@
 ---
 title: "[ML/DL] Linear Regression (선형회귀)"
-date: 2020-05-29
-categories: [Machine Learning, Computer Science]
-tags:
-- Deep_Learning
-- Linear_Regression
-- Gradient_descent
-- 선형회귀
-- 경사하강법
+categories: mldl
+tags: ml Deep_Learning Linear_Regression Gradient_descent 선형회귀 경사하강법
 ---
-
-* TOC
-{:toc}
-{: .toc }
 
 # Linear Regression (선형회귀)
 ## Linear Regression (선형회귀)란?
