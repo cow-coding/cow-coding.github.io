@@ -9,24 +9,6 @@
 <meta property="og:title" content="{{ page.title }}">
 <meta property="og:type" content="article">
 
-<!-- Webmaster Tools verfication -->
-<meta name="google-site-verification" content="{{ site.google.verify }}">
-
-{% if site.bing-verify %}
-<meta name="msvalidate.01" content="{{ site.bing-verify }}">
-{% endif %}
-
-{% capture canonical %}
-  {{ site.url }}
-{% if site.permalink contains '.html' %}
-  {{ page.url }}
-{% else %}
-  {{ page.url | remove:'index.html' | strip_slash }}
-{% endif %}
-  {% endcapture %}
-<link rel="canonical" href="{{ canonical }}">
-<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-
 
 {% for tag_slug in page.tags %}
   {% unless tag.header-img %}
@@ -41,7 +23,7 @@
   <meta property="og:image" content="{{ site.url }}/assets/{{ tag.header-img }}">
   <br/>
 {% else %}
-  <meta property="og:image" content="{{ site.url }}/assets/img/bg.png">
+  <meta property="og:image" content="{{ site.url }}/assets/img/logo.png">
 {% endif %}
 
 <meta property="og:image:width" content="640" />
@@ -76,6 +58,15 @@
 {% if site.keywords or page.keywords %}
   <meta name="keywords" content="{{ site.keywords | default: page.keywords | join:',' }}">
 {% endif %}
+
+{% if site.google.verify %}
+
+<!-- Webmaster Tools verfication -->
+<meta name="google-site-verification" content="{{ site.google.verify }}">{% endif %}
+{% if site.bing-verify %}    <meta name="msvalidate.01" content="{{ site.bing-verify }}">{% endif %}
+{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+<link rel="canonical" href="{{ canonical }}">
+<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
 <!-- =============== -->
 <!-- LINKS           -->
@@ -112,9 +103,9 @@
 <script data-ad-client="ca-pub-4761810170892865" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <!-- hightlight.js -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/dracula.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<link rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.5.0/build/styles/dracula.min.css">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.5.0/build/highlight.min.js"></script>
 
 <!--[if lt IE 9]>
 <script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
@@ -129,20 +120,6 @@
   {% include styles/inline.scss %}
   {% endcapture %}
   {{ include_to_scssify | scssify }}
-
-  .me {
-        width: 6.5rem;
-        height: 6.5rem;
-        align-self: center;
-        margin-right: 20px;
-        border-radius: 100%;
-        position:relative
-        display: block;
-        max-width: 100%;
-        margin-bottom: 1rem;
-        border:none
-
-    }
 </style>
 
 {% capture style_url %}{% link assets/css/hydejack.css %}?v=6.4.0{% endcapture %}
