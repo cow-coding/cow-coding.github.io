@@ -114,6 +114,9 @@ exclude:
 
 markdown:           kramdown
 highlighter:        rouge
+lsi:                false
+excerpt_separator:  "\n\n"
+incremental:        false
 
 kramdown:
   footnote_backlink: '&#x21a9;&#xfe0e;'
