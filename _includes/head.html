@@ -99,7 +99,13 @@
   window.disableDrawer = {{ site.disable_drawer | default:false}};
 </script>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <!--Google Adsense-->
 <script data-ad-client="ca-pub-4761810170892865" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
