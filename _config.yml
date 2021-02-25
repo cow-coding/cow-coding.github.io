@@ -113,7 +113,6 @@ exclude:
   - Gemfile.lock
 
 markdown:           kramdown
-mathjax:            true
 highlighter:        rouge
 
 kramdown:
