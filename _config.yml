@@ -112,15 +112,16 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+markdown:           kramdown
+mathjax:            true
+highlighter:        rouge
+
 kramdown:
   footnote_backlink: '&#x21a9;&#xfe0e;'
   math_engine:       mathjax
   math_engine_opts:
     preview:         true
     preview_as_code: true
-
-mathjax:            true
-highlighter:        rouge
 
 compress_html:
   comments:          ["<!-- ", " -->"]
