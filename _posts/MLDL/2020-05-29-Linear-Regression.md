@@ -2,6 +2,7 @@
 title: "[ML/DL] Linear Regression (선형회귀)"
 categories: mldl
 tags: ml Deep_Learning Linear_Regression Gradient_descent 선형회귀 경사하강법
+use_math: true
 ---
 
 # Linear Regression (선형회귀)

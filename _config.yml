@@ -119,6 +119,8 @@ kramdown:
     preview:         true
     preview_as_code: true
 
+highlighter:        rouge
+
 compress_html:
   comments:          ["<!-- ", " -->"]
   clippings:         all
