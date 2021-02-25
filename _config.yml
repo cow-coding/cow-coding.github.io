@@ -119,6 +119,7 @@ kramdown:
     preview:         true
     preview_as_code: true
 
+mathjax:            true
 highlighter:        rouge
 
 compress_html:
