@@ -1,8 +1,13 @@
 ---
-layout: post
 title: "[boostcourse] Kotlin기본 - Kotlin의 구조와 자료형"
-categories: kotlin
-tags: bc 부스트_코스_서포터즈_3기 코틀린_프로그래밍_기본_1
+date: 2021-01-09
+categories: [Kotlin, Boost Course, Computer Science]
+tags:
+- Kotlin
+- boostcourse
+- 부스트 코스 서포터즈 3기
+- 코틀린 프로그래밍 기본 1
+- 자료형
 ---
 
 <style>
@@ -12,6 +17,9 @@ img {
 }
 </style>
 
+* TOC
+{:toc}
+{: .toc }
 
 **이 글은 부스트코스 3기 코틀린 활동으로 작성된 글입니다.**
 
