@@ -1,4 +1,4 @@
 ---
 layout: category
-title: Life
+title: 일상다반사
 ---
