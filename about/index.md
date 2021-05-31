@@ -18,7 +18,8 @@ img {
 * Bachelor
   * Inha Univ. Compute Science Engineering  
   2019 ~
-  * Inha Univ. CSE and Statistics (Data Analytics)  
+  * Inha Univ. Information Analysis  
+   (Interdisciplinary major with Statistics)  
   2020 ~
 
 
