@@ -19,7 +19,7 @@ timezone: Asia/Seoul
 
 title: Coding Gallery                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: 마침표를 찍고 조금 더 멀리   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -38,7 +38,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Park kibum
+  name: ParkKibum
   email: kbp0237@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -81,7 +81,7 @@ theme_mode: light  # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /image/profile.PNG
+avatar: /assets/my_img/profile.PNG
 
 # boolean type, the global switch for ToC in posts.
 toc: true
