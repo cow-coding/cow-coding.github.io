@@ -8,13 +8,6 @@ tags:
 - Naver
 ---
 
-<style>
-img {
-  width:600px;
-  display:block;
-  margin:0px auto;
-}
-</style>
 
 # **AI Rush 2021**
 
@@ -25,7 +18,7 @@ img {
 
 위의 링크로 들어가시면 아래와 같은 코드 리포지토리가 나타납니다.
 
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcbbH96%2Fbtq86fAOuDY%2FrLNqUvAFDof6d74IjCv7j1%2Fimg.png)
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcbbH96%2Fbtq86fAOuDY%2FrLNqUvAFDof6d74IjCv7j1%2Fimg.png){: w="600"}  
 
 실제로 model 폴더에 들어가면 아무것도 없습니다만 AI Rush에서는 각 담당 PM분들이 만들어둔 베이스라인 모델이 있었습니다. 그래서 깃 리포지토리에 있는 것처럼 실행을 하면 코드가 알아서 수행이됩니다. 물론 AI Rush에서는 더 정형화된 방식으로 진행을 했습니다. 다양한 하이퍼 파라미터의 조정은 shell script상에서 옵션을 통해 조절하는 방식도 가능했습니다. 물론 베이스라인 코드를 작성하신 PM분들의 스타일에 따라 전달방식은 차이가 있었습니다.
 
@@ -43,7 +36,7 @@ img {
 
 개인적으로 라운드 1을 통과하면 다행일 것이라 생각했고 각 과제별로 14등까지 진출하는 상황에서 아슬아슬하게 13등으로 통과했습니다. 등수가 낮아서 높은 성능을 보여주지 못한 것이라 생각하실 수도 있지만 전체 과제 참가자의 평균정도의 성능 향상은 보여줬습니다.
 
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcPkRCE%2Fbtq80osReGs%2F7T1ShFBIqs13RfOmhgg590%2Fimg.png)
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcPkRCE%2Fbtq80osReGs%2F7T1ShFBIqs13RfOmhgg590%2Fimg.png){: w="600"}
 
 <br>
 
@@ -59,7 +52,7 @@ img {
 
 # **마무리**
 
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvnhUQ%2Fbtq85e3xp8D%2FikzW27hawQ1A6WYignM4c1%2Fimg.png)
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvnhUQ%2Fbtq85e3xp8D%2FikzW27hawQ1A6WYignM4c1%2Fimg.png){: w="600"}
 
 길고긴 2~3달간의 대장정이 끝났습니다. 이 대회를 참여하면서 많은 것을 배우게 될 것이라 생각했습니다. 물론 많은 걸 배웠습니다. ~가장 큰 거는 나는 굉장히 부족하구나였다는 것을....~ 우선 실제 대규모 회사에서는 어떤 방식으로 데이터 모델링과 학습을 진행하는 지 알 수 있었습니다. 또한 데이터의 구조도 파악할 수 있는 좋은 기회였습니다. 그리고 무엇보다 공부 방향성을 잡을 수도 있었습니다. 개인적으로 데이터 및 AI쪽에서도 어떤 분야로 공부를 할지도 생각을 해보게 된 것 같습니다.
 
