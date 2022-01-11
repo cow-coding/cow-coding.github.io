@@ -29,7 +29,7 @@ Linked list (연결 리스트)와 가장 많이 비교되는 자료구조에는 
 <br>
 
 ## Singly Linked list (단순 연결 리스트)
-단순 연결 리스트는 **노드들의 연속** 으로 구성되어있다. 각 각의 노드들은 Element(원소)와 Next(다음 노드 포인터)로 구성되어 있고 원소에는 저장하고자하는 object가 들어간다.  
+단순 연결 리스트는 **노드들의 연속** 으로 구성되어있다. 각 각의 노드들은 Element(원소)와 Next(다음 노드 포인터)로 구성되어 있고 원소에는 저장하고자하는 object가 들어간다.  
 연결 리스트는 가장 앞의 노드를 가리키는 head와 가장 마지막 노드를 가리키는 tail이 존재하고 가장 마지막 노드의 next포인터의 주소 값은 NULL값을 가진다.  
 ![node](/image/DS/node.png)  
 - object가 저장되는 곳인 element와 다음 노드를 가리키는 node pointer인 next가 존재한다. element를 데이터필드, next를 주소필드라고 한다.
