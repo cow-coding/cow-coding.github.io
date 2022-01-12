@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "카카오 추천팀 겨울 인턴 2021 코테 후기"
+title: "[Review] 카카오 추천팀 겨울 인턴 2021 코테 후기"
 categories: [Life]
 tags:
 - Kakao

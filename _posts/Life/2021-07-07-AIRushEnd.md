@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Naver AI Rush 2021 1 / 2라운드 후기"
+title: "[Review] Naver AI Rush 2021 1 / 2라운드 후기"
 date: 2021-07-07
 categories: [Life]
 tags:
