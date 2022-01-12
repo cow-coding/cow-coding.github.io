@@ -7,6 +7,7 @@ tags:
 - Algorithm Anlaysis
 - Big-O notation
 - pseudocode
+math: true
 ---
 <style>
 img {
