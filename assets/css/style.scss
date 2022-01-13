@@ -10,24 +10,3 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 @import "{{ site.theme }}";
 
 /* append your custom style below */
-#sidebar {
-  background: #18587d;
-
-  a {
-    &:hover{ 
-      color: #f8f9facf !important;
-    }
-  }
-
-  .nav-item {
-    &.active {
-      .nav-link {
-        color: #fcfcfc;
-      }
-    }
-
-    &:not(.active) > a {
-      @extend %clickable-transition;
-    }
-  }
-}
