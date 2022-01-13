@@ -8,7 +8,8 @@ order: 4
 
 <center>
 안녕하세요 Cow-coding입니다.<br>
-저의 블로그에 놀러오신 모든 분들을 환영합니다!
+저의 블로그에 놀러오신 모든 분들을 환영합니다!<br>
+이름은 cow-coding이지만 별칭은 polar라고도 합니다!
 </center>  
 
 ## Bio
