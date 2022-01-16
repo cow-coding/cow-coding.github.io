@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2022-01-13 23:35
+date: 2022-01-13 23:35:00
 title: "[BoostCamp AI Tech / Pre-Course 3] Module and Package"
 categories: [NAVER BoostCamp AI Tech, Pre-Course]
 tags: [NAVER, BoostCamp, AI Tech, Pre-course]
