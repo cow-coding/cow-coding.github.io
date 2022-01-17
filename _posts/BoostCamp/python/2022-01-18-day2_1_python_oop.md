@@ -1,12 +1,12 @@
 ---
 layout: post
-date: 2022-01-13 22:45:00
-title: "[BoostCamp AI Tech / Pre-Course 2] Python OOP"
-categories: [NAVER BoostCamp AI Tech, Pre-Course]
-tags: [Python, NAVER, BoostCamp, AI Tech, OOP, Pre-course]
+date: 2022-01-18
+title: "[BoostCamp AI Tech] Day2 - Python OOP"
+categories: [NAVER BoostCamp AI Tech, Python]
+tags: [Python, NAVER, BoostCamp, AI Tech, OOP, Python, Basic]
 math: true
 ---
-# Pre-Course 2 : Object-oriented Programming
+# Basic Session Day 2 : Object-Oriented Programming
 
 ---
 ## OOP 기본 개념

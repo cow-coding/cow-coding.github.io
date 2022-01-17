@@ -1,12 +1,13 @@
 ---
 layout: post
-date: 2022-01-13 23:35:00
-title: "[BoostCamp AI Tech / Pre-Course 3] Module and Package"
-categories: [NAVER BoostCamp AI Tech, Pre-Course]
-tags: [NAVER, BoostCamp, AI Tech, Pre-course]
+date: 2022-01-18
+title: "[BoostCamp AI Tech] Day2 - Module & Package"
+categories: [NAVER BoostCamp AI Tech, Python]
+tags: [Python, NAVER, BoostCamp, AI Tech, Python, Basic]
 math: true
 ---
-# Pre-Course 3 : Module and Package
+
+# Basic Session Day 2 : Module and Package
 
 ---
 ## Introduction
