@@ -34,6 +34,8 @@ Blog : www.cow-coding.github.io
 ## 📎 Interests
 - Recommender System
 - Search Engine
+- NLP
+- MLOps
 
 ---
 
