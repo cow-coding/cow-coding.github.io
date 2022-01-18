@@ -6,7 +6,7 @@ categories: [NAVER BoostCamp AI Tech, Python]
 tags: [Python, NAVER, BoostCamp, AI Tech, OOP, Python, Basic]
 math: true
 ---
-# Basic Session Day 2 : Object-Oriented Programming
+# Python : Object-Oriented Programming
 
 ---
 ## OOP 기본 개념

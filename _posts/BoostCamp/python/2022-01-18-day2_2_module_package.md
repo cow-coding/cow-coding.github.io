@@ -7,7 +7,7 @@ tags: [Python, NAVER, BoostCamp, AI Tech, Python, Basic]
 math: true
 ---
 
-# Basic Session Day 2 : Module and Package
+# Python : Module and Package
 
 ---
 ## Introduction
