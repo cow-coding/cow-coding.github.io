@@ -69,7 +69,7 @@ $$
     - 학습과정에는 softmax로 학습
     - 추론과정에서는 one_hot 함수를 활용 $\text{onehot}(\mathbf{o})$
 
-- softmax
+- softmax  
 ```python
 def softmax(vec):
     denumerator = np.exp(vec - np.max(vec, axis=-1, keepdims=True))
@@ -87,7 +87,7 @@ array([[2.44728471e-01, 6.65240956e-01, 9.00305732e-02],
 """
 ```
 
-- one_hot
+- one_hot  
 ```python
 def one_hot(val, dim):
     return [np.eye(dim)[_] for _ in val]
