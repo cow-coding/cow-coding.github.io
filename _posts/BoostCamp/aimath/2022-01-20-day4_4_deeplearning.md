@@ -3,7 +3,7 @@ layout: post
 date: 2022-01-20 04:00:00 PM
 title: "[BoostCamp AI Tech] Day4 - 딥러닝 학습방법 이해하기"
 categories: [NAVER BoostCamp AI Tech, AI Math]
-tags: [NAVER, BoostCamp, AI Tech, AI Math, math, Statistics, Deep Learning]
+tags: [NAVER, BoostCamp, AI Tech, AI Math, math, Deep Learning]
 math: true
 ---
 # AI Math : 딥러닝 학습방법 이해하기
