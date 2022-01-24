@@ -36,11 +36,32 @@ $$
 - $P(D \| \theta)$ : likelihood
 - $P(D)$ : evidence = 관측상태
 
-|||real||
-|:---:|:---:|:---:|:---:|
-|||True|False|
-|predict|True|True Positive (TP)|False Positive (FP)|
-||False|False Negative (FP)|True Negative (TN)|  
+
+<center>
+<table>
+    <tr align="center">
+        <td colspan="4">Real</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td><b>True</b></td>
+        <td><b>False</b></td>
+    </tr>
+    <tr rowspan="2" align="center">
+        <td>Predict</td>
+        <td><b>True</b></td>
+        <td>True Positive (TP)</td>
+        <td>False Positive (FP)</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td><b>False</b></td>
+        <td>False Negative (FN)</td>
+        <td>True Negative (TN)</td>
+    </tr>
+</table>
+</center>
 
 - 민감도 (Recal) = $\frac{\text{TP}}{\text{TP + FN}}$  
 - 특이도 (Specificity) = $\frac{\text{TN}}{\text{TN + FN}}$
