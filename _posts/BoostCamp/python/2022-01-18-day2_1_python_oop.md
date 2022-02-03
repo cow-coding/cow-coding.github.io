@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-01-18
-title: "[BoostCamp AI Tech] Day2 - Python OOP"
+title: "[BoostCamp AI Tech / Python] Day2 - Python OOP"
 categories: [NAVER BoostCamp AI Tech, Python]
 tags: [Python, NAVER, BoostCamp, AI Tech, OOP, Python, Basic]
 math: true

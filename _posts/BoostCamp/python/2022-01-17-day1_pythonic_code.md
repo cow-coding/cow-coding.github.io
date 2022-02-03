@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-01-17
-title: "[BoostCamp AI Tech] Day1 - Pythonic code"
+title: "[BoostCamp AI Tech / Python] Day1 - Pythonic code"
 categories: [NAVER BoostCamp AI Tech, Python]
 tags: [Deep Learning, NAVER, BoostCamp, AI Tech, Basic, Python]
 math: true

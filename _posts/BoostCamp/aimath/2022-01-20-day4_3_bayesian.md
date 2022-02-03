@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-01-20 04:00:00 PM
-title: "[BoostCamp AI Tech] Day4 - 베이즈 통계학 맛보기"
+title: "[BoostCamp AI Tech / AI Math] Day4 - 베이즈 통계학 맛보기"
 categories: [NAVER BoostCamp AI Tech, AI Math]
 tags: [NAVER, BoostCamp, AI Tech, AI Math, math, Statistics, Bayesian]
 math: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-01-20 11:00:00 AM
-title: "[BoostCamp AI Tech] Day4 - 확률론 맛보기"
+title: "[BoostCamp AI Tech / AI Math] Day4 - 확률론 맛보기"
 categories: [NAVER BoostCamp AI Tech, AI Math]
 tags: [NAVER, BoostCamp, AI Tech, AI Math, math, Probability theory]
 math: true
