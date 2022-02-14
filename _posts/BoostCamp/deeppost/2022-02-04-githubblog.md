@@ -2,7 +2,7 @@
 layout: post
 date: 2022-02-04
 title: "[BoostCamp AI Tech] Jekyll Blog와 MathJax"
-categories: [NAVER BoostCamp AI Tech, 심화 포스팅]
+categories: [NAVER BoostCamp AI Tech, Production]
 tags: [NAVER, BoostCamp, AI Tech, Jekyll, MathJax, LaTex]
 math: true
 ---
