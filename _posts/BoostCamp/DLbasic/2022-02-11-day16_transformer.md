@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-02-11 05:00:00 PM
-title: "[BoostCamp AI Tech / DL Basic] Transformer"
+title: "[BoostCamp AI Tech / DL Basic] Day16 Transformer"
 categories: [NAVER BoostCamp AI Tech, DL Basic]
 tags: [Deep Learning, NAVER, BoostCamp, AI Tech, DL Basic, DL, ML, Transformer]
 math: true

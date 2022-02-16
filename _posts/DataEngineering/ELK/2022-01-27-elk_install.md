@@ -2,7 +2,7 @@
 layout: post
 date: 2022-01-27
 title: "[Elastic Search] WSL을 통한 ELK 설치 및 실행"
-categories: [ELK, Elastic Search]
+categories: [Date Engineering, ELK]
 tags: [Data Engineering, ELK, Elastic Search, Search Engine]
 math: true
 ---
@@ -56,7 +56,7 @@ WSL 2 설치 및 환경 세팅은 아래 블로그를 참고했기 때문에 링
 
 WSL 세팅이 끝나고 우분투도 잘 설정이 되었다면 우분투 서버를 실행하면 아래 사진처럼 나옵니다.
 
-![](/image/elk/elasticsearch/post1/elk_install_1.png)
+![](/image/DataEngineering/elk/elasticsearch/post1/elk_install_1.png)
 
 이제 엘라스틱서치를 설치하기 전에 엘라스틱 서치는 자바 기반으로 구동되기 때문에 자바를 설치해줘야 합니다. 아래의 두 명령어를 쳐줍시다.
 
@@ -89,7 +89,7 @@ javac 11.0.11
 
 [Download Elasticsearch](https://www.elastic.co/kr/downloads/elasticsearch)
 
-![](/image/elk/elasticsearch/post1/elk_install_2.png)
+![](/image/DataEngineering/elk/elasticsearch/post1/elk_install_2.png)
 
 사진처럼 DEB X86 64를 우클릭해서 링크 주소 복사를 해줍시다. 이건 각 OS와 아키텍쳐에 맞춰서 선택해주셔야 합니다. 만약 본인이 ARM기반의 노트북이면 옆에 있는 AARCH로 설치하셔야합니다. 그 후 아래의 코드를 우분투 쉘에 입력해주세요. 참고로 링크 복붙은 마우스 우클릭하시면 붙여넣기가 됩니다.
 
@@ -99,13 +99,13 @@ $ wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.13.3
 
 동일한 방식으로 키바나, 로그 스태시, 파일 비츠도 설치합시다. 키바나, 로그 스태시, 비츠는 위의 사이트에서 상단의 제품으로 가시면 아래 처럼 ELK stack부분이 나타납니다. 해당 부분을 클릭하시면 설치가 가능합니다.
 
-![](/image/elk/elasticsearch/post1/elk_install_3.png)*제품의 ELASTIC (ELK) STACK을 누르면*
+![](/image/DataEngineering/elk/elasticsearch/post1/elk_install_3.png)*제품의 ELASTIC (ELK) STACK을 누르면*
 
-![](/image/elk/elasticsearch/post1/elk_install_4.png)*우측 상단에 ELK Stack이 모두 나옵니다. logstash, kibana는 동일 방식으로 설치합니다.*
+![](/image/DataEngineering/elk/elasticsearch/post1/elk_install_4.png)*우측 상단에 ELK Stack이 모두 나옵니다. logstash, kibana는 동일 방식으로 설치합니다.*
 
 파일 비츠의 경우 좀 더 찾아야 합니다. 설치 방법은 동일합니다. 하지만 Beats로 들어가서 아래의 다운로드를 누르면 아래처럼 다양한 비츠들이 나옵니다. 사실 파일 비츠는 비츠의 일종이기 때문에 여기서 Filebeat만 설치를 합니다.
 
-![](/image/elk/elasticsearch/post1/beat_install_2.png)
+![](/image/DataEngineering/elk/elasticsearch/post1/beat_install_2.png)
 
 위의 사진에서 처럼 FIlebeat를 설치하시면 동일하게 진행이 가능합니다.
 
@@ -130,7 +130,7 @@ $ curl -X GET localhost:9200
 
 엘라스틱서치는 일반적으로 9200 포트에, 키바나는 5601포트에 열리게 됩니다. 위의 코드로 9200포트의 접속 값을 GET방식을 통해 가져왔을 때 아래처럼 나타나면 엘라스틱서치 정상적으로 동작하는 것입니다.
 
-![](/image/elk/elasticsearch/post1/elk_check.png)
+![](/image/DataEngineering/elk/elasticsearch/post1/elk_check.png)
 
 두번째 방법은 웹 페이지 링크에 localhost:9200을 입력해서 위의 사진과 유사하게 나타나면 정상적으로 실행되고 있는겁니다.
 
@@ -140,7 +140,7 @@ $ curl -X GET localhost:9200
 
 이번엔 웹페이지에 localhost:5601로 접속해봅시다. 아래처럼 어떤 사이트가 나타나면 키바나가 정상적으로 동작하고 있는겁니다.
 
-![](/image/elk/elasticsearch/post1/kibana_check.png)
+![](/image/DataEngineering/elk/elasticsearch/post1/kibana_check.png)
 
 이렇게 해서 ELK를 대략적으로 알아봤고 ELK Stack의 설치까지 진행해봤습니다.
 

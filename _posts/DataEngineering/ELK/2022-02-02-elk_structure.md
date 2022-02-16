@@ -2,7 +2,7 @@
 layout: post
 date: 2022-02-02
 title: "[Elastic Search] Elasticsearch의 구조"
-categories: [ELK, Elastic Search]
+categories: [Date Engineering, ELK]
 tags: [Data Engineering, ELK, Elastic Search, Search Engine]
 math: true
 ---
@@ -31,11 +31,11 @@ math: true
 
 - 필드는 도큐먼트의 데이터 타입입니다. 일반적으로 RDB의 column과 유사하다고 설명하지만 엄밀히는 틀린 말입니다. 엘라스틱서치의 빠른 검색 속도가 보장되는 이유는 필드에 저장된 데이터 토큰을 살려서 인덱싱이 진행되기 때문입니다. 실제 공식 문서에 따르면 도큐먼트를 검색 토큰으로 변환하여 해당 토큰이 저장된 도큐먼트를 연결합니다. 이를 역 인덱스 (Inverted Index)라고 합니다.
 
-![](/image/elk/elasticsearch/post2/rdb.png)
+![](/image/DataEngineering/elk/elasticsearch/post2/rdb.png)
 
 위의 도큐먼트가 저장되어 있다고 가정하면 엘라스틱서치는 아래와 같이 인덱싱을 진행합니다.
 
-![](/image/elk/elasticsearch/post2/elasticdb.png)
+![](/image/DataEngineering/elk/elasticsearch/post2/elasticdb.png)
 
 결과적으로 완전히 새로운 단어가 추가되는 경우가 아니면 데이터가 추가되어도 탐색하는 값이 늘어나지 않는 경우가 발생합니다. 따라서 굉장히 빠른 속도로 검색이 가능합니다.
 
@@ -78,11 +78,11 @@ math: true
 
 쉽게 이해를 하기위해 엘라스틱 가이드북 설명을 가져오겠습니다. 1개의 인덱스가 있을때, 5개의 샤드로 구성되고 4개의 노드로 이루어져 있다고 가정합니다. 이 경우 5개의 프라이머리 샤드와 5개의 레플리카 샤드가 4개의 노드에 분산되어 저장됩니다.
 
-![](/image/elk/elasticsearch/post2/physic1.png)*출처:https://esbook.kimjmin.net/*
+![](/image/DataEngineering/elk/elasticsearch/post2/physic1.png)*출처:https://esbook.kimjmin.net/*
 
 이때 같은 샤드와 복제본은 반드시 서로 다른 노드에 저장됩니다. 노드는 일종의 서버라고 했었죠? 만약 서버가 네트워크 문제같은 어떤 문제가 발생하여 작동을 정지하면 해당 노드의 정보를 어떻게 처리할까요?
 
-![](/image/elk/elasticsearch/post2/physic2.png)*출처:https://esbook.kimjmin.net/*
+![](/image/DataEngineering/elk/elasticsearch/post2/physic2.png)*출처:https://esbook.kimjmin.net/*
 
 위처럼 3번 노드가 작동을 중지하면 0번과 4번 샤드의 데이터를 잃게 됩니다. 이때 클러스터의 동작 순서는 다음과 같이 흘러갑니다.
 
@@ -92,7 +92,7 @@ math: true
 
 3) 이렇게되면 모든 샤드의 복구가 완료하여 전체 샤드의 개수가 유지되고 노드 유실이 발생해도 데이터 무결성과 가용성을 보장합니다.
 
-![](/image/elk/elasticsearch/post2/physic3.png)*출처:https://esbook.kimjmin.net/*
+![](/image/DataEngineering/elk/elasticsearch/post2/physic3.png)*출처:https://esbook.kimjmin.net/*
 
 최종적으로는 다시 위의 사진처럼 데이터 복구가 완료됩니다. 만약 프라이머리 샤드가 유실되는 경우에는 기존에 존재하는 레플리카 샤드가 프라이머리 샤드로 승격되고 다른 노드에 해당 샤드를 복제하는 과정이 수행됩니다.
 
