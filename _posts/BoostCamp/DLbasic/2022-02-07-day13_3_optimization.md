@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-02-07 01:00:00 PM
-title: "[BoostCamp AI Tech / DL Basic] Day13 Optimization"
+title: "[BoostCamp AI Tech / DL Basic] Day13 - Optimization"
 categories: [NAVER BoostCamp AI Tech, DL Basic]
 tags: [Deep Learning, NAVER, BoostCamp, AI Tech, DL Basic, DL, ML, Optimization]
 math: true

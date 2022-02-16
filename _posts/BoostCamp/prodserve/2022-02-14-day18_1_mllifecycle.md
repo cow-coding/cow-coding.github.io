@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-02-14 01:00:00 PM
-title: "[BoostCamp AI Tech / Production] Day18 ML Project Life Cycle"
+title: "[BoostCamp AI Tech / Production] Day18 - ML Project Life Cycle"
 categories: [NAVER BoostCamp AI Tech, Production]
 tags: [NAVER, BoostCamp, AI Tech, Product Serving, MLOps]
 math: true
