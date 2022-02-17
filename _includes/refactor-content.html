@@ -11,7 +11,7 @@
 
 {% if _content contains '<table>' %}
   {% assign _content = _content
-    | replace: '<table>', '<div class="table-wrapper"><table>'
+    | replace: '<table>', '<div class="table-wrapper"><table align="center">'
     | replace: '</table>', '</table></div>'
     | replace: '</table></div></code>', '</table></code>'
   %}
