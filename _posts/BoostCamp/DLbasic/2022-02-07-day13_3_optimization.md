@@ -218,5 +218,6 @@ $$
   & \hat{x}_i = \frac{x_i - \mu_{B}}{\sqrt{\sigma^2_{B}+\epsilon}}
 \end{aligned}
 $$
+
 - Batch 정규화는 Gradient Vanishing/Exploding 문제를 해결하고자 등장
 - 각 배치별로 데이터를 정규화하여 0 ~ 1의 수치로 조정
