@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Life] 코세라 MLOps 특화과정 Course 1 수료!"
+title: "[Life] 코세라 MLOps 특화과정 수료!"
 categories: [Life]
 tags: [coursera, MLOps, Data Engineering]
 ---
@@ -14,9 +14,9 @@ tags: [coursera, MLOps, Data Engineering]
 솔직히 이걸 들어면서 다 정리하자!라는 건 1주차가 끝나고 욕심이란걸 깨닫고 일단 강의를 다 들으면서 필기로 정리를 하고 블로그 정리는 나중에 하자!라는 방식으로 바꿨습니다. 일단 그렇게 하니까 강의 몰입도도 높아지고 정리 자체도 집중하게 될 수 있었습니다. 무엇보다 힘들었던건 강의 자체가 영어라 영어자막을 보면서 진행했는데, 이게 음성인식으로 자막이 만들어진건지 발음이 살짝 애매한 부분은 완전히 다르게 나오더군요...;;  
 예를 들면 문맥상 보면 parallelize인데 paralyze라고 한다던가.... (그 해석이 안되서 번역기를 돌렸더니 자꾸 뭘 마비시킨다고해서 다시 들어보니까 parallelize였던....)
 
-# Course 1 수료!
+# MLOps Specialization 수료
 
-![](/image/Life/coursera1.png)
+![](/image/Life/mlopsspecial.png)
 
-드디어 어찌어찌 꾸역꾸역 잠을 줄여가며 Course 1인 Introduction to Machine Learning in Production을 마쳤습니다! 전반적인 내용은 사실 기술적인 내용이 엄청 많지는 않았습니다. 제 기억으론 데이터 처리와 관련된 이야기, 데이터를 ML 학습과 실제 배포에서는 어떻게 다르게 파악하는지 같은 약간 **실전 배포**의 느낌이 많이 들었습니다. 그러다보니 case study도 많이 나왔구요.  
-이번에 배운 내용을 살려 이후 부캠 product serving에서 잘 적용해봐야겠습니다!
+4~5달을 들어야하는 특화과정을 저의 실수로 그만 한달만에 끝내버리는 기염을 보여줬습니다. 내용자체가 엄청 어려운 내용이 있었다기보단 좀 더 스스로 해보면 좋을 내용들이 많았습니다.  
+블로그에 정리하면서 하기에는 일정이 너무 빡빡해서 1주차 정도만 올려놨는데 이제 슬슬 주말에 한주차씩 정리해서 올려야할 듯 합니다. 다음 coursera specialization은 [Learn SQL Basics for Data Science](https://www.coursera.org/specializations/learn-sql-basics-data-science?를 들어볼까 생각중입니다. SQL 자체를 못하는건 아니지만 자유자재로 쓸 정도로 잘한다고 보기도 어렵기 때문에 배워두면 충분히 좋을 것으로 생각됩니다.
