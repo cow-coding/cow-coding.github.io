@@ -19,4 +19,4 @@ tags: [coursera, MLOps, Data Engineering]
 ![](/image/Life/mlopsspecial.png)
 
 4~5달을 들어야하는 특화과정을 저의 실수로 그만 한달만에 끝내버리는 기염을 보여줬습니다. 내용자체가 엄청 어려운 내용이 있었다기보단 좀 더 스스로 해보면 좋을 내용들이 많았습니다.  
-블로그에 정리하면서 하기에는 일정이 너무 빡빡해서 1주차 정도만 올려놨는데 이제 슬슬 주말에 한주차씩 정리해서 올려야할 듯 합니다. 다음 coursera specialization은 [Learn SQL Basics for Data Science](https://www.coursera.org/specializations/learn-sql-basics-data-science?를 들어볼까 생각중입니다. SQL 자체를 못하는건 아니지만 자유자재로 쓸 정도로 잘한다고 보기도 어렵기 때문에 배워두면 충분히 좋을 것으로 생각됩니다.
+블로그에 정리하면서 하기에는 일정이 너무 빡빡해서 1주차 정도만 올려놨는데 이제 슬슬 주말에 한주차씩 정리해서 올려야할 듯 합니다. 다음 coursera specialization은 [Learn SQL Basics for Data Science](https://www.coursera.org/specializations/learn-sql-basics-data-science)를 들어볼까 생각중입니다. SQL 자체를 못하는건 아니지만 자유자재로 쓸 정도로 잘한다고 보기도 어렵기 때문에 배워두면 충분히 좋을 것으로 생각됩니다.
