@@ -62,7 +62,7 @@ $$
     - 원핫 벡터형태의 정답 레이블 $\mathbf{y} = (y_1, ..., y_k)$ 를 관찰 data로 활용하면 softmax MLE계산  
 
     $$
-    \hat{\theta}_{MLE} = \text{argmax}_{\theta}\frac{1}{n}\sum_{i=1}^{n}\sum_{k=1}^{K}y_{i,k}\log(MLP_{\theta}(\mathbf{x}_{i})_{k})
+    \hat{\theta}_{MLE} = \underset{\theta}{\text{argmax}}\frac{1}{n}\sum_{i=1}^{n}\sum_{k=1}^{K}y_{i,k}\log(MLP_{\theta}(\mathbf{x}_{i})_{k})
     $$
 
 ## 확률분포의 거리
