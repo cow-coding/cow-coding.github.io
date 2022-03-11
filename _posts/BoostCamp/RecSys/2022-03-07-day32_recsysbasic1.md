@@ -16,9 +16,10 @@ math: true
 - item을 소비자에게 제공하는 것이 핵심이고 제공 방법은 크게 2가지 방식이 존재
   - pull 방식 : 소비자가 직접 서비스에 searching과 같은 방식을 통해 자신의 의도를 전달하여 item을 탐색
   - push 방식 : 서비스가 소비자에게 어울리는 item을 추천 및 제공하는 방식
-- 과거에 비해 현재는 **정보가 과다하게 많은** 시대라 사용자가 직접 item을 탐색하는 방식은 시간이 오래 걸림 $\rightarrow$ 사용자의 만족도 감소
+- 과거에 비해 현재는 **정보가 과다하게 많은** 시대라 사용자가 직접 item을 탐색하는 방식은 시간이 오래 걸림  
+  $\rightarrow$ 사용자의 만족도 감소
 
-![](/image/boostcamp/recsys/basic/longtail.png){: w="500"}
+![](/image/boostcamp/recsys/basic/longtail.png){: w="500"}*Long tail phenomenon*
 
 - 많은 정보 속에 인기있는 소수의 item만 선택적으로 소비되기 때문에 **Long tail phenomenon**이 발생하고 이는 item의 수가 늘어날 수록 꼬리의 길이는 길어짐
 - 이런 long-tail 부분의 item을 추천해주는 것이 추천 시스템의 본질이자 **개인화 추천**의 핵심 목적 (long-tail recommendation)
@@ -42,7 +43,7 @@ math: true
 ### 아이템 관련 정보
 - 추천 아이템 종류 : 포탈, 광고, 미디어 등 사용되는 환경에 따라 아이템의 종류는 달라짐
 - 아이템 profiling : 아이템도 유저처럼 profiling을 진행
-  - Item ID
+  - Item ID : 아이템 구분을 위한 식별자
   - Item metadata : 아이템의 고유 정보이며 영화 장르, 상품 카테고리 등 해당하는 아이템이 갖고 있는 고유한 특성과 정보를 의미
 
 ### 유저-아이템 상호작용 정보 (Feedback)

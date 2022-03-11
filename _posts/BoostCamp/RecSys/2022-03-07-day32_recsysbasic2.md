@@ -128,7 +128,7 @@ $$
 $$
 \begin{aligned}
 \text{avg_rating} = \frac{\text{# of positive reviews}}{\text{# of reviews}} \qquad\qquad \\
-score = \text{avg_rating}-(\text{avg_rating - 0.5})\cdot 2^{-\log(\text{\# of reviews})}
+score = \text{avg_rating}-(\text{avg_rating - 0.5})\cdot 2^{-\log(\text{# of reviews})}
 \end{aligned}
 $$
 

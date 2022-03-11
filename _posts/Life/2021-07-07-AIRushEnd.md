@@ -2,7 +2,7 @@
 layout: post
 title: "[Review] Naver AI Rush 2021 1 / 2라운드 후기"
 date: 2021-07-07
-categories: [Life]
+categories: [Life, Career]
 tags:
 - AI Rush
 - Naver

@@ -28,6 +28,14 @@ math: true
 
 ## 연관 분석 (association analysis)
 
+|Transaction|Items|
+|:---:|:---:|
+|1|{맥주, 우유}|
+|2|{빵, 기저귀, 맥주, 계란, 우유}|
+|3|{우유, 기저귀, 맥주, 콜라}|
+|4|{빵, 우유, 기저귀, 맥주}|
+|5|{빵, 우유, 기저귀, 콜라, 계란}|
+
 - 연관 분석이란 **장바구니 분석** 혹은 **서열 분석**이라 함
 - 상품 구매, 조회 등 **연속적인 거래에서 규칙을 발견**하기 위해 적용
 
@@ -57,7 +65,7 @@ $$
   - **유저가 지정한 minimum support (threshold) 이상의 itemset을 의미**
   - 반대 성향은 infrequent itemset이라 함
 
-### support
+### Support
 
 $$
 \begin{aligned}
@@ -69,8 +77,10 @@ $$
 - **두 itemset X, Y를 모두 포함하는 transaction의 비율**  
   = 전체 transaction에 대한 itemset의 확률값
 - 좋은 규칙을 찾거나, 불필요한 연산을 줄일 때 사용
+- Support에 나타나는 $n(X \cup Y)$는 확률의 교집합과 동일한 개념
+  - **집합**의 관점으로 바라보면 이 의미는 **X가 있는 동시에 Y가 있는 집합**이라는 의미
 
-### confidence
+### Confidence
 
 $$
 c(X \rightarrow Y) = \frac{n(X \cup Y)}{n(X)} = \frac{s(X\rightarrow Y)}{s(X)} = \frac{P(X \cap Y)}{P(X)} = P(Y|X)
@@ -79,7 +89,7 @@ $$
 - X가 포함된 transaction 중 Y도 초함하는 transaction 비율
 - **confidence가 높을수록 유용한 규칙**
 
-### lift
+### Lift
 
 $$
 l(X \rightarrow Y) = \frac{P(Y|X)}{P(Y)} = \frac{P(X \cap Y)}{P(X)P(Y)} = \frac{s(X\rightarrow Y)}{s(X)s(Y)} = \frac{c(X \rightarrow Y)}{s(Y)}
