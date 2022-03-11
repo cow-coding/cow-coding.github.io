@@ -2,7 +2,7 @@
 layout: post
 date: 2022-03-04 03:00:00 PM
 title: "[Life] 코세라 MLOps 특화과정 수료!"
-categories: [Life]
+categories: [Life, Life]
 tags: [coursera, MLOps, Data Engineering]
 ---
 

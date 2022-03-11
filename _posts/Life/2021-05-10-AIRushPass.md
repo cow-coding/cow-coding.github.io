@@ -2,7 +2,7 @@
 layout: post
 title: "[Review] Naver AI Rush 2021 코딩테스트 후기 및 합격"
 date: 2021-05-10
-categories: [Life]
+categories: [Life, Career]
 tags:
 - AI Rush
 - Naver

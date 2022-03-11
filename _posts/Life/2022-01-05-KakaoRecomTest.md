@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Review] 카카오 추천팀 겨울 인턴 2021 코테 후기"
-categories: [Life]
+categories: [Life, Career]
 tags:
 - Kakao
 - 카카오
