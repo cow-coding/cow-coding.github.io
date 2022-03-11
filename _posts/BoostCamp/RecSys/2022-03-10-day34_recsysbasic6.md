@@ -8,7 +8,7 @@ math: true
 ---
 # RecSys : Matrix Factorization
 
-**강의에서는 ALS와 BPR을 다뤘지만 두 내용은 논문을 직접 읽고 분석할 예정이므로 Paper Review 카테고리를 확인해주세요**
+**강의에서는 ALS와 BPR을 다뤘지만 두 내용은 논문을 직접 읽고 분석할 예정이므로 Paper Review 카테고리에 업데이트 될 예정입니다.**
 
 ---
 
@@ -24,7 +24,7 @@ math: true
   - 모델을 학습하여 압축된 형태로 저장함
   - 기존 모델 서빙처럼 학습된 모델을 통해 추천하므로 서빙 속도가 빠흠
   - NBCF의 문제인 sparsity, scalability 한계 극복
-    - Sparsity Ration가 99.5%가 넘어도 좋은 성능을 보임
+    - Sparsity Ratio가 99.5%가 넘어도 좋은 성능을 보임
   - NBCF는 특정 K개의 이웃에 대해 추천하므로 **오버피팅의 위험**이 존재하지만 MBCF는 모든 데이터 패턴을 학습하므로 이를 방지할 수 있음
   - NBCF는 **이론적으로는** 그럴듯하지만 **현실의 데이터에서는 일정 기준치를 넘는 유사도를 갖는 케이스를 찾기가 어려운 문제**가 존재함 (Limited coverage)
 
