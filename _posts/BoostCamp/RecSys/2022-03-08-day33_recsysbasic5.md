@@ -62,7 +62,7 @@ math: true
 
 $$
 \begin{aligned}
-msd(u, v) = \frac{1}{|I_{uv}|}\cdot \sum_{i\in I_{uv}}(r_{ui}-r_{vi})^2 , \qquad msd_{sim(u, v)} = \frac{1}{msd(u,v) \color{red}{+ 1}} \\
+msd(u, v) = \frac{1}{|I_{uv}|}\cdot \sum_{i\in I_{uv}}(r_{ui}-r_{vi})^2 , \qquad msd_{sim(u, v)} = \frac{1}{msd(u,v) \color{red}{+ 1}} \\\\
 msd(i, j) = \frac{1}{|U_{ij}|}\cdot \sum_{u\in U_{ij}}(r_{ui}-r_{uj})^2, \qquad msd_{sim(i,j)} = \frac{1}{msd(i,j) \color{red}{+ 1}}
 \end{aligned}
 $$
@@ -134,8 +134,8 @@ $$
 
 $$
 \begin{aligned}
-dev(u, i) = r(u,i) - \bar{r_u} \quad for \; known \; rating \quad \\
-\widehat{dev}(u, i) = \frac{\sum_{u'\in\Omega_i}dev(u', i)}{|\Omega_i|} = \frac{\sum_{u'\in\Omega_i}r(u', i) - \bar{r_{u'}}}{|\Omega_i|} \\
+dev(u, i) = r(u,i) - \bar{r_u} \quad for \; known \; rating \quad \\\\
+\widehat{dev}(u, i) = \frac{\sum_{u'\in\Omega_i}dev(u', i)}{|\Omega_i|} = \frac{\sum_{u'\in\Omega_i}r(u', i) - \bar{r_{u'}}}{|\Omega_i|} \\\\
 \hat{r}(u, i) = \bar{r_u} + \widehat{dev}(u, i) \qquad\qquad\qquad
 \end{aligned}
 $$

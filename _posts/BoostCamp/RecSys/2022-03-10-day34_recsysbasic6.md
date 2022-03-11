@@ -150,7 +150,7 @@ $$
 
 $$
 \begin{aligned}
-\text{Error: } e_{ui} = r_{ui} - p_u^\intercal q_i \qquad\qquad\qquad\qquad \\
+\text{Error: } e_{ui} = r_{ui} - p_u^\intercal q_i \qquad\qquad\qquad\qquad \\\\
 \text{Gradient} = -2(r_{ui} - p_u^\intercal q_i)q_i + 2\lambda p_u = -2(e_{ui}q_i - \lambda p_u)
 \end{aligned}
 $$
@@ -211,7 +211,7 @@ $$
 
 $$
 \begin{aligned}
-\widehat{r_{ui}(t)} = \mu + b_u(t)+b_i(t)+p_u^\intercal q_i(t) \\
+\widehat{r_{ui}(t)} = \mu + b_u(t)+b_i(t)+p_u^\intercal q_i(t) \\\\
 b_u(t) = b_u + \alpha_u\cdot sign(t - t_u)\cdot |t-t_u|^\beta
 \end{aligned}
 $$
