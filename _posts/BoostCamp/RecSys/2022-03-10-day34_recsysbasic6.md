@@ -164,7 +164,7 @@ q_i \leftarrow q_i + \eta\cdot(e_{ui}p_u - \lambda q_i)
 \end{aligned}
 $$
 
-- 여기서 좀 걸리는게 위에 있는 -2는 어디로 사라졌는가...?
+- -2는 원래 적는게 맞지만 그냥 learning rate에 포함된 계산이라 생략된다.
 
 ---
 
