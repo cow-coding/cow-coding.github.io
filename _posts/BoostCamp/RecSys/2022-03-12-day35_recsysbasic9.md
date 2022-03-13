@@ -138,7 +138,10 @@ math: true
 ![](/image/boostcamp/recsys/basic/yr2.png){: w="500"}*Deep Neural Networks for YouTube Recommendations*
 
 - 성별 등 인구통계학 정보, 지리적 정보를 vector에 포함
-- 과거 데이터에 편향된 학습이 이뤄지는 것을 해결하고자 시청 로그가 학습 시점에서 경과한 정도를 피쳐로 추가
+- Example Age
+  - 과거 데이터에 편향된 학습이 이뤄지는 것을 해결하고자 시청 로그가 학습 시점에서 경과한 정도를 피쳐로 추가
+  - 모델은 오래된 아이템의 특성상 과거의 인기 아이템에 편향되어 학습을 하는 경우가 있음
+  - 이런 경우 최신의 아이템은 과거에 비해 밀리게 되므로 아이템의 최신성을 고려하고자 추가로 feature에 학습
 
 ![](/image/boostcamp/recsys/basic/yr3.png){: w="500"}*Deep Neural Networks for YouTube Recommendations*
 
@@ -147,9 +150,10 @@ P(w_t = i | U, C) = \frac{e^{v_i u}}{\sum_{j\in V}e^{v_j u}}
 $$
 
 - 위에서 생성된 모든 벡터를 concatenate 후 layer에 feed하여 나오는 것이 **User Vector**
-- User Vector를 입력으로 하여 softmax를 통해 상위 N개 비디오 추출
-- 추출된 비디오 벡터 ($v_j$)와 user vector의 내적을 계산
-- Annoy, Faiss를 활용하여 빠르게 탐색
+- User Vector를 입력으로 하여 softmax를 통해 나온 아이템의 임베딩과 내적을 통해 **유저와 아이템의 유사정도**를 계산
+  - 이 과정은 아이템 자체가 **수백개**라 연산시간이 너무 오래 걸려 실제 serving에서는 무리가 있음
+- 따라서 실제 serving에는 user vector와 video vector embedding index를 활용해 수백개의 리스트에서 **Annoy**와 **Faiss**등으로 Top-N을 추출하여 전달
+
 
 ### Ranking
 
