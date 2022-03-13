@@ -119,18 +119,21 @@ math: true
 
 ### Candidate Generation
 
-**현재 이 부분은 강의가 잘못 편집되어 제대로된 내용을 정리하지 못하여 이후 수정이 이뤄질 예정입니다.**
 
 ![](/image/boostcamp/recsys/basic/youtube3.png){: w="500"}*Deep Neural Networks for YouTube Recommendations*
 
+- 주어진 특정 유저 $u$가 **선호할 video의 리스트를 생성**하는 것이 목적
 - 특정 시간(t)에 유저 U가 C라는 context에서 비디오(I)를 볼 확률을 계산
   - 수백개의 아이템에서 후보군을 선택해야하므로 Extreme multiclass classification 문제
-  - 마지막에 Softmax 함수를 사용하여 분류 진행
+  - 마지막에 내적을 통한 Softmax 함수를 사용하여 유저와 비디오의 관계를 계산하여 분류 진행
 
 ![](/image/boostcamp/recsys/basic/yr1.png){: w="500"}*Deep Neural Networks for YouTube Recommendations*
 
-- 과거의 시청 이력과 검색 이력을 임베딩하여 vector 형성
-- 마지막 기록들이 너무 강한 영향을 미치는 것을 방지하고자 전반적인 임베딩의 평균을 적용
+- CG에서 가장 중요한 embedding vector
+- 다른 추천 모델에서는 **유저의 행동 정보**를 잘 활용하지 않았음
+- 유저의 행동기록 임베딩
+  - 과거의 시청 이력과 검색 이력을 임베딩하여 vector 형성
+  - 마지막 기록들이 너무 강한 영향을 미치는 것을 방지하고자 전반적인 임베딩의 평균을 적용
 
 ![](/image/boostcamp/recsys/basic/yr2.png){: w="500"}*Deep Neural Networks for YouTube Recommendations*
 
