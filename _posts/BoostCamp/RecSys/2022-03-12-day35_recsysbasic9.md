@@ -3,7 +3,7 @@ layout: post
 date: 2022-03-12 02:00:00 PM
 title: "[BoostCamp AI Tech / RecSys] Day35 - Recommender System with DL"
 categories: [NAVER BoostCamp AI Tech, Recommender System]
-tags: [Deep Learning, NAVER, BoostCamp, AI Tech, Recommender System, ANN, Nearest Neighbor]
+tags: [Deep Learning, NAVER, BoostCamp, AI Tech, Recommender System, Autoencoder]
 math: true
 ---
 # RecSys : Recommender System with DL
@@ -39,7 +39,7 @@ math: true
 - MF의 한계를 지적하며 신경망 구조의 모델을 제시
 - [Paper : Neural Collaborative Filtering](https://arxiv.org/abs/1708.05031)
 
-### 논문의 문제제기
+### 문제제기
 
 ![](/image/boostcamp/recsys/basic/ncf1.png){: w="500"}
 
