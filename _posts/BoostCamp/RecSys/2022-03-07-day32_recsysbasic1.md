@@ -2,7 +2,7 @@
 layout: post
 date: 2022-03-07 02:40:00 PM
 title: "[BoostCamp AI Tech / RecSys] Day32 - 추천 시스템 개념"
-categories: [NAVER BoostCamp AI Tech, Recommender System]
+categories: [NAVER Boostcamp AI Tech, 추천 시스템 이론]
 tags: [Deep Learning, NAVER, BoostCamp, AI Tech, Recommender System]
 math: true
 ---

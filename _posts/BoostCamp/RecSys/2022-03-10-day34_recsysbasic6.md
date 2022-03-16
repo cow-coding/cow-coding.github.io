@@ -2,7 +2,7 @@
 layout: post
 date: 2022-03-10 02:22:00 PM
 title: "[BoostCamp AI Tech / RecSys] Day34 - Matrix Factorization"
-categories: [NAVER BoostCamp AI Tech, Recommender System]
+categories: [NAVER Boostcamp AI Tech, 추천 시스템 이론]
 tags: [Deep Learning, NAVER, BoostCamp, AI Tech, Recommender System, Collaborative Filtering, CF, MF, Matrix Factorization]
 math: true
 ---
