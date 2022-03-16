@@ -2,7 +2,7 @@
 layout: post
 date: 2022-03-11 05:00:00 PM
 title: "[BoostCamp AI Tech / RecSys] Day35 - Approximate Nearest Neighbor"
-categories: [NAVER Boostcamp AI Tech, 추천 시스템 이론]
+categories: [NAVER BoostCamp AI Tech, 추천 시스템 이론]
 tags: [Deep Learning, NAVER, BoostCamp, AI Tech, Recommender System, ANN, Nearest Neighbor]
 math: true
 ---

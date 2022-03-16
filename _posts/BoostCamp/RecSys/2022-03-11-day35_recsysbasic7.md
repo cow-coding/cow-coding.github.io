@@ -2,7 +2,7 @@
 layout: post
 date: 2022-03-11 11:00:00 AM
 title: "[BoostCamp AI Tech / RecSys] Day35 - Item2Vec"
-categories: [NAVER Boostcamp AI Tech, 추천 시스템 이론]
+categories: [NAVER BoostCamp AI Tech, 추천 시스템 이론]
 tags: [Deep Learning, NAVER, BoostCamp, AI Tech, Recommender System, Item2Vec]
 math: true
 ---

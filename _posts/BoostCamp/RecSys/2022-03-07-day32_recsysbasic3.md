@@ -2,7 +2,7 @@
 layout: post
 date: 2022-03-07 05:22:00 PM
 title: "[BoostCamp AI Tech / RecSys] Day32 - 추천 시스템 종류와 연관 분석"
-categories: [NAVER Boostcamp AI Tech, 추천 시스템 이론]
+categories: [NAVER BoostCamp AI Tech, 추천 시스템 이론]
 tags: [Deep Learning, NAVER, BoostCamp, AI Tech, Recommender System]
 math: true
 ---
