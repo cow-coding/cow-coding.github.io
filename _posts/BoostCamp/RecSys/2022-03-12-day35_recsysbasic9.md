@@ -39,7 +39,7 @@ math: true
 - MF의 한계를 지적하며 신경망 구조의 모델을 제시
 - [Paper : Neural Collaborative Filtering](https://arxiv.org/abs/1708.05031)
 
-### 문제제기
+### 문제 제기
 
 ![](/image/boostcamp/recsys/basic/ncf1.png){: w="500"}
 
