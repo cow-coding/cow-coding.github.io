@@ -2,7 +2,7 @@
 layout: post
 date: 2022-02-02
 title: "[Elastic Search] Elasticsearch의 구조"
-categories: [Date Engineering, ELK]
+categories: [Data Engineering, ELK]
 tags: [Data Engineering, ELK, Elastic Search, Search Engine]
 math: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 date: 2022-01-27
 title: "[Elastic Search] WSL을 통한 ELK 설치 및 실행"
-categories: [Date Engineering, ELK]
+categories: [Data Engineering, ELK]
 tags: [Data Engineering, ELK, Elastic Search, Search Engine]
 math: true
 ---
