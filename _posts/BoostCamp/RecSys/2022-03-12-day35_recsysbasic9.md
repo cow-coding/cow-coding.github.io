@@ -2,7 +2,7 @@
 layout: post
 date: 2022-03-12 02:00:00 PM
 title: "[BoostCamp AI Tech / RecSys] Day35 - Recommender System with DL"
-categories: [NAVER BoostCamp AI Tech, 추천 시스템 이론]
+categories: [NAVER BoostCamp AI Tech, Level 2 - 추천 시스템 이론]
 tags: [Deep Learning, NAVER, BoostCamp, AI Tech, Recommender System, Autoencoder]
 math: true
 ---

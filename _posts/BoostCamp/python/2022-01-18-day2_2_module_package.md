@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2022-01-18
-title: "[BoostCamp AI Tech / Python] Day2 - Module & Package"
-categories: [NAVER BoostCamp AI Tech, Python]
+title: "[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Module & Package"
+categories: [NAVER BoostCamp AI Tech, Level 1 - Python/PyTorch]
 tags: [Python, NAVER, BoostCamp, AI Tech, Python, Basic]
 math: true
 ---

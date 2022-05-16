@@ -2,7 +2,7 @@
 layout: post
 date: 2022-03-08 02:22:00 PM
 title: "[BoostCamp AI Tech / RecSys] Day33 - Collaborative Filtering"
-categories: [NAVER BoostCamp AI Tech, 추천 시스템 이론]
+categories: [NAVER BoostCamp AI Tech, Level 2 - 추천 시스템 이론]
 tags: [Deep Learning, NAVER, BoostCamp, AI Tech, Recommender System, Collaborative Filtering, CF]
 math: true
 ---
