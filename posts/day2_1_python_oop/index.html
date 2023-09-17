@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="en" data-mode="light" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="day-prompt" content="days ago"><meta name="hour-prompt" content="hours ago"><meta name="minute-prompt" content="minutes ago"><meta name="justnow-prompt" content="just now"><meta name="generator" content="Jekyll v4.2.1" /><meta property="og:title" content="[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Python OOP" /><meta property="og:locale" content="en" /><meta name="description" content="Python : Object-Oriented Programming" /><meta property="og:description" content="Python : Object-Oriented Programming" /><link rel="canonical" href="https://cow-coding.github.io/posts/day2_1_python_oop/" /><meta property="og:url" content="https://cow-coding.github.io/posts/day2_1_python_oop/" /><meta property="og:site_name" content="Coding Gallery" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2022-01-18T00:00:00+09:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Python OOP" /><meta name="twitter:site" content="@twitter_username" /><meta name="google-site-verification" content="TXb5nWUV5Ag0O8EVGMTUS11ZVi7BYOensPMiRdQGNRg" /> <script type="application/ld+json"> {"description":"Python : Object-Oriented Programming","url":"https://cow-coding.github.io/posts/day2_1_python_oop/","@type":"BlogPosting","headline":"[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Python OOP","dateModified":"2022-05-16T14:24:47+09:00","datePublished":"2022-01-18T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://cow-coding.github.io/posts/day2_1_python_oop/"},"@context":"https://schema.org"}</script><title>[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Python OOP | Coding Gallery</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Coding Gallery"><meta name="application-name" content="Coding Gallery"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4761810170892865" crossorigin="anonymous"></script><body data-spy="scroll" data-target="#toc" data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end" lang="en"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src="/assets/img/my_img/icebear.jpeg" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Coding Gallery</a></div><div class="site-subtitle font-italic">마침표를 찍고 조금 더 멀리</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <a href="https://github.com/cow-coding" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/twitter_username" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['kbp0237','gmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper" class="row justify-content-center"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Python OOP</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Python OOP</h1><div class="post-meta text-muted"><div> By <em> <a href="https://github.com/cow-coding">Park Kibum</a> </em></div><div class="d-flex"><div> <span> Posted <em class="timeago" date="2022-01-18 00:00:00 +0900" data-toggle="tooltip" data-placement="bottom" title="Tue, Jan 18, 2022, 12:00 AM +0900" >Jan 18, 2022</em> </span> <span> Updated <em class="timeago" date="2022-05-16 14:24:47 +0900 " data-toggle="tooltip" data-placement="bottom" title="Mon, May 16, 2022, 2:24 PM +0900" >May 16, 2022</em> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1249 words"> <em>6 min</em> read</span></div></div></div><div class="post-content"><h1 id="python--object-oriented-programming">Python : Object-Oriented Programming</h1><hr /><h2 id="oop-기본-개념">OOP 기본 개념 <a href="#oop-기본-개념" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><ul><li>객체 : 속성(attribute) + 행동(action)으로 구성되어있음<ul><li>속성(attribute)는 일반적으로 변수<li>행동(action)은 method</ul><li>클래스 : 객체의 설계도<ul><li>흔히들 많이 쓰는 비유는 붕어빵틀을 클래스, 붕어빵을 객체라 하는데 개인적으로 좋아하진 않는 비유이다. 그거 하나로는 뒤에 오는 내용들을 통틀어 설명하기 어려움.<li>그래서 나는 보통 제품 사용설명서 혹은 제품 조립설명서라고 비유한다.</ul></ul><h2 id="rule">Rule <a href="#rule" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p>파이썬의 표준 작성법인 PEP-8에 따르면 변수, 함수명은 Snake case로 작성하고 클래스명은 Camel case로 작성한다.</p><ul><li>변수(variable) / 함수(function)<div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre>  <span class="n">person_name</span> <span class="o">=</span> <span class="s">"park"</span>
+
+  <span class="k">def</span> <span class="nf">add_number</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+      <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</pre></table></code></div></div><ul><li>변수와 함수는 snake case로 작성함이 원칙이다.</ul><li>클래스(class)<div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre>  <span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+      <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"park"</span>
+
+      <span class="k">def</span> <span class="nf">about_me</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"My name is </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s">."</span><span class="p">)</span>
+
+      <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">return</span> <span class="sa">f</span><span class="s">"My name is </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s">."</span>
+</pre></table></code></div></div><ul><li>클래스는 camel case로 작성함을 원칙으로 한다.<li>변수 및 함수에 <code class="language-plaintext highlighter-rouge">__</code>(double underscore)가 붙는 경우를 mangling이라고 한다.<br /> 이는 특수 예약 함수에 자주 사용되며 private 변수의 역할로도 사용한다. 자세한 내용을 언급한 블로그 글을 참고하길 바란다.<br /> <a href="https://corikachu.github.io/articles/python/python-magic-method">파이썬 더블 언더스코어:Magic Method - corikachu blog</a><li><code class="language-plaintext highlighter-rouge">__str__</code>은 출력문의 값을 결정한다.<li>클래스에 <code class="language-plaintext highlighter-rouge">(object)</code>는 상속하는 객체를 넣는다. 따로 상속하지 않는 클래스면 적지않아도 무방하다.</ul></ul><h2 id="oop의-특징">OOP의 특징 <a href="#oop의-특징" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p>객체지향프로그래밍의 핵심 요소는 상속(Inheritance), 다형성(Polymorphism), 가시성(Visibility)가 있다.</p><h3 id="상속inheritance">상속(Inheritance) <a href="#상속inheritance" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><ul><li>부모 클래스로부터 attribute, method를 물려받는 것<ul><li><code class="language-plaintext highlighter-rouge">super()</code>명령어를 사용하여 부모 class의 값을 가져올 수 있다.<li>상속을 할 때는 클래스 선언부에 <code class="language-plaintext highlighter-rouge">class 클래스명(부모 클래스)</code>의 형태로 작성한다.</ul><li>상속 예시<div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>  <span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+      <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">gender</span><span class="p">):</span>
+          <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+          <span class="bp">self</span><span class="p">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+          <span class="bp">self</span><span class="p">.</span><span class="n">gender</span> <span class="o">=</span> <span class="n">gender</span>
+
+      <span class="k">def</span> <span class="nf">about_me</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"저의 이름은 </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s">입니다. 나이는 </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">age</span><span class="si">}</span><span class="s">입니다."</span><span class="p">)</span>
+        
+      <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">return</span> <span class="sa">f</span><span class="s">"저의 이름은 </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s">입니다. 나이는 </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">age</span><span class="si">}</span><span class="s">입니다."</span>
+</pre></table></code></div></div><div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre><td class="rouge-code"><pre>  <span class="k">class</span> <span class="nc">Korean</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+      <span class="k">pass</span>
+
+  <span class="k">class</span> <span class="nc">Employee</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+      <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">salary</span><span class="p">,</span> <span class="n">hire_date</span><span class="p">):</span>
+          <span class="nb">super</span><span class="p">().</span><span class="n">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">gender</span><span class="p">)</span>
+          <span class="bp">self</span><span class="p">.</span><span class="n">salary</span> <span class="o">=</span> <span class="n">salary</span>
+          <span class="bp">self</span><span class="p">.</span><span class="n">hire_date</span> <span class="o">=</span> <span class="n">hire_date</span>
+        
+      <span class="k">def</span> <span class="nf">do_work</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">print</span><span class="p">(</span><span class="s">"열심히 일을 합니다."</span><span class="p">)</span>
+        
+      <span class="k">def</span> <span class="nf">about_me</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="nb">super</span><span class="p">().</span><span class="n">about_me</span><span class="p">()</span>
+          <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"제 급여는 </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">salary</span><span class="si">}</span><span class="s">원 이구요. 제 입사일은 </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">hire_date</span><span class="si">}</span><span class="s">입니다."</span><span class="p">)</span>
+</pre></table></code></div></div></ul><h3 id="다형성polymorphism">다형성(Polymorphism) <a href="#다형성polymorphism" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><ul><li><p>같은 이름 method의 내부로직을 다르게 작성하는 것을 말한다.</p><li><p>다형성 예시</p><div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>  <span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
+      <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+          <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+      <span class="k">def</span> <span class="nf">talk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">raise</span> <span class="nb">NotImplementedError</span><span class="p">(</span><span class="s">"Subclass must implement abstract method"</span><span class="p">)</span>
+</pre></table></code></div></div><div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre>  <span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+      <span class="k">def</span> <span class="nf">talk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">return</span> <span class="s">'Meow!'</span>
+    
+  <span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+      <span class="k">def</span> <span class="nf">talk</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">return</span> <span class="s">'Woof! Woof!'</span>
+</pre></table></code></div></div></ul><h3 id="가시성visibility">가시성(Visibility) <a href="#가시성visibility" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><ul><li>객체 내부 변수의 접근을 막는 것을 말함<li>encapsulation이라고도 한다.<li>class간의 간섭/정보공유를 최소하하는 것이 목적이다.<li>내부의 attribute들을 직접 활용하는 것이 아닌 interface만 사용한다.<ul><li>이를 위해 <code class="language-plaintext highlighter-rouge">__</code>를 붙인 manglin 변수를 사용한다.<li>private 변수는 decorator인 <code class="language-plaintext highlighter-rouge">@property</code>를 사용하면 접근이 가능하다.</ul><li>가시성 예시<div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre><td class="rouge-code"><pre>  <span class="k">class</span> <span class="nc">Inventory</span><span class="p">:</span>
+      <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="bp">self</span><span class="p">.</span><span class="n">items</span> <span class="o">=</span> <span class="p">[]</span>
+          <span class="bp">self</span><span class="p">.</span><span class="n">test</span> <span class="o">=</span> <span class="s">"abc"</span>
+
+      <span class="k">def</span> <span class="nf">add_new_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">product</span><span class="p">):</span>
+          <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">product</span><span class="p">)</span> <span class="o">==</span> <span class="n">Product</span><span class="p">:</span>
+              <span class="bp">self</span><span class="p">.</span><span class="n">items</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">product</span><span class="p">)</span>
+              <span class="k">print</span><span class="p">(</span><span class="s">'new item added'</span><span class="p">)</span>
+          <span class="k">else</span><span class="p">:</span>
+              <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="s">"Invalid Item"</span><span class="p">)</span>
+
+      <span class="k">def</span> <span class="nf">get_number_of_items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">items</span><span class="p">)</span>
+</pre></table></code></div></div><li>decorator 활용<div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre><td class="rouge-code"><pre>  <span class="c1"># visibility
+</span>  <span class="k">class</span> <span class="nc">Inventory</span><span class="p">:</span>
+      <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="bp">self</span><span class="p">.</span><span class="n">__items</span> <span class="o">=</span> <span class="p">[]</span>
+
+      <span class="k">def</span> <span class="nf">add_new_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">product</span><span class="p">):</span>
+          <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">product</span><span class="p">)</span> <span class="o">==</span> <span class="n">Product</span><span class="p">:</span>
+              <span class="bp">self</span><span class="p">.</span><span class="n">__items</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">product</span><span class="p">)</span>
+              <span class="k">print</span><span class="p">(</span><span class="s">'new item added'</span><span class="p">)</span>
+          <span class="k">else</span><span class="p">:</span>
+              <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="s">"Invalid Item"</span><span class="p">)</span>
+    
+      <span class="c1"># use decorator
+</span>      <span class="o">@</span><span class="nb">property</span>
+      <span class="k">def</span> <span class="nf">items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">return</span> <span class="bp">self</span><span class="p">.</span><span class="n">__items</span>
+
+      <span class="k">def</span> <span class="nf">get_number_of_items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+          <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">__items</span><span class="p">)</span>
+</pre></table></code></div></div></ul><h2 id="decorate">Decorate <a href="#decorate" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><h3 id="first-class-objects">First-class objects <a href="#first-class-objects" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><ul><li>변수나 data 구조에 슬 수 있는 객체를 일급객체라고 한다.<ul><li>일급객체는 parameter나 return value로 사용이 가능하다.</ul><li><p>python의 모든 함수는 일급객체이다.</p><li>일급객체 예시<div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>  <span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+      <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+
+  <span class="k">def</span> <span class="nf">cube</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+      <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+
+  <span class="k">def</span> <span class="nf">formula</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">argument_list</span><span class="p">):</span>
+      <span class="k">return</span> <span class="p">[</span><span class="n">method</span><span class="p">(</span><span class="n">value</span><span class="p">)</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">argument_list</span><span class="p">]</span>
+
+  <span class="n">f</span> <span class="o">=</span> <span class="n">square</span>
+  <span class="n">f</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></table></code></div></div></ul><h3 id="inner-function">Inner-function <a href="#inner-function" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><ul><li>함수내에 함수가 존재하는 것<li>closure : inner function을 return value로 반환하는 것<ul><li>다양한 변형을 생성할 수 있다.</ul><li>Inner-function 예시<div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>  <span class="k">def</span> <span class="nf">print_msg</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+      <span class="k">def</span> <span class="nf">printer</span><span class="p">():</span>
+          <span class="k">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+      <span class="n">printer</span><span class="p">()</span>
+
+  <span class="n">print_msg</span><span class="p">(</span><span class="s">"Hello, Python"</span><span class="p">)</span>
+</pre></table></code></div></div><div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>  <span class="c1"># closure 1
+</span>  <span class="k">def</span> <span class="nf">print_msg</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+      <span class="k">def</span> <span class="nf">printer</span><span class="p">():</span>
+          <span class="k">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">printer</span>
+
+  <span class="n">another</span> <span class="o">=</span> <span class="n">print_msg</span><span class="p">(</span><span class="s">"Hello, Python"</span><span class="p">)</span>
+  <span class="n">another</span><span class="p">()</span>
+</pre></table></code></div></div><div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre>  <span class="c1"># closuer 2
+</span>  <span class="k">def</span> <span class="nf">tag_func</span><span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+      <span class="n">text</span> <span class="o">=</span> <span class="n">text</span>
+      <span class="n">tag</span> <span class="o">=</span> <span class="n">tag</span>
+
+      <span class="k">def</span> <span class="nf">inner_func</span><span class="p">():</span>
+          <span class="k">return</span> <span class="sa">f</span><span class="s">'&lt;</span><span class="si">{</span><span class="n">tag</span><span class="si">}</span><span class="s">&gt;</span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s">&lt;/</span><span class="si">{</span><span class="n">tag</span><span class="si">}</span><span class="s">&gt;'</span>
+
+      <span class="k">return</span> <span class="n">inner_func</span>
+
+  <span class="n">h1_func</span> <span class="o">=</span> <span class="n">tag_func</span><span class="p">(</span><span class="s">'title'</span><span class="p">,</span> <span class="s">'This is Python Class'</span><span class="p">)</span>
+  <span class="n">h1_func</span><span class="p">()</span>
+</pre></table></code></div></div></ul><h3 id="decorator">Decorator <a href="#decorator" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><ul><li>function을 꾸며주는(decorate) 역할을 한다.<li>closure를 좀 더 간단하게 구현한 것<li>Decorator 예시<div class="language-python highlighter-rouge"><div class="code-header"> <span data-label-text="Python"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre>  <span class="k">def</span> <span class="nf">star</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+      <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+          <span class="k">print</span><span class="p">(</span><span class="s">'*'</span> <span class="o">*</span> <span class="mi">30</span><span class="p">)</span>
+          <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+          <span class="k">print</span><span class="p">(</span><span class="s">'*'</span> <span class="o">*</span> <span class="mi">30</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">inner</span>
+
+  <span class="o">@</span><span class="n">star</span>
+  <span class="k">def</span> <span class="nf">printer</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+      <span class="k">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+  <span class="n">printer</span><span class="p">(</span><span class="s">"Hello"</span><span class="p">)</span>
+</pre></table></code></div></div></ul></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/naver-boostcamp-ai-tech/'>NAVER BoostCamp AI Tech</a>, <a href='/categories/level-1-python-pytorch/'>Level 1 - Python/PyTorch</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/python/" class="post-tag no-text-decoration" >Python</a> <a href="/tags/naver/" class="post-tag no-text-decoration" >NAVER</a> <a href="/tags/boostcamp/" class="post-tag no-text-decoration" >BoostCamp</a> <a href="/tags/ai-tech/" class="post-tag no-text-decoration" >AI Tech</a> <a href="/tags/oop/" class="post-tag no-text-decoration" >OOP</a> <a href="/tags/python/" class="post-tag no-text-decoration" >Python</a> <a href="/tags/basic/" class="post-tag no-text-decoration" >Basic</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Python OOP - Coding Gallery&url=https://cow-coding.github.io/posts/day2_1_python_oop/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Python OOP - Coding Gallery&u=https://cow-coding.github.io/posts/day2_1_python_oop/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://telegram.me/share?text=[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Python OOP - Coding Gallery&url=https://cow-coding.github.io/posts/day2_1_python_oop/" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" title-succeed="Link copied successfully!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Recently Updated</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/coursera2_3/">[MLOps Specialization / Step2] Labeling Data</a><li><a href="/posts/module/">[BoostCamp AI Tech / 심화포스팅] torch.nn.Module 뜯어먹기</a><li><a href="/posts/list/">[Deep Dive Python] 2. List</a><li><a href="/posts/variable/">[Deep Dive Python] 1. Python의 객체와 변수 개념</a><li><a href="/posts/final7/">[BoostCamp AI Tech / Final] Day91 - Airflow setting 및 배치 파이프라인 설계</a></ul></div><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/ai-tech/">AI Tech</a> <a class="post-tag" href="/tags/boostcamp/">BoostCamp</a> <a class="post-tag" href="/tags/naver/">NAVER</a> <a class="post-tag" href="/tags/deep-learning/">Deep Learning</a> <a class="post-tag" href="/tags/mlops/">MLOps</a> <a class="post-tag" href="/tags/data-engineering/">Data Engineering</a> <a class="post-tag" href="/tags/project/">Project</a> <a class="post-tag" href="/tags/basic/">Basic</a> <a class="post-tag" href="/tags/python/">Python</a> <a class="post-tag" href="/tags/recommender-system/">Recommender System</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Contents</div><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="tail-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/day2_2_module_package/"><div class="card-body"> <em class="timeago small" date="2022-01-18 00:00:00 +0900" >Jan 18, 2022</em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Module & Package</h3><div class="text-muted small"><p> Python : Module and Package Introduction 다른 프로그램을 사용하는 방식은 클래스와 모듈방식이 있다. 보통 모듈을 사용하는 것이 더 좋다. Module : 대상의 부품 및 조각 Package : 모듈을 모아놓은 단위 Module .py파일을 모듈이라고 함. i...</p></div></div></a></div><div class="card"> <a href="/posts/day3_1_numpy/"><div class="card-body"> <em class="timeago small" date="2022-01-19 00:00:00 +0900" >Jan 19, 2022</em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day3 - Numpy</h3><div class="text-muted small"><p> Python : Numpy 행렬의 표현 \[\begin{aligned} \begin{aligned} 2x_{1} + 2x_{2} + x_{3} = 9 \\ 2x_{1} - x_{2} + 2x_{3} = 6 \\ x_{1} - x{2} + 2x_{3} = 5 \end{aligned} ...</p></div></div></a></div><div class="card"> <a href="/posts/day5_1_pandas/"><div class="card-body"> <em class="timeago small" date="2022-01-21 00:00:00 +0900" >Jan 21, 2022</em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day5 - Pandas</h3><div class="text-muted small"><p> Python : Pandas 데이터 로드 import pandas as pd 일반적으로 pandas는 read_xxx() 함수를 활용해 데이터를 불러온다. Series 데이터프레임에서 하나의 column vector data object를 series라고 한다. (index, data) 한 쌍으로 이루어진 데이터 객체 a...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/day1/" class="btn btn-outline-primary" prompt="Older"><p>[BoostCamp AI Tech] Day1</p></a> <a href="/posts/day2_2_module_package/" class="btn btn-outline-primary" prompt="Newer"><p>[BoostCamp AI Tech / Level 1 - Python/PyTorch] Day2 - Module & Package</p></a></div><div id="disqus_thread" class="pt-2 pb-2"><p class="text-center text-muted small"> Comments powered by <a href="https://disqus.com/">Disqus</a>.</p></div><script type="text/javascript"> var disqus_config = function () { this.page.url = 'https://cow-coding.github.io/posts/day2_1_python_oop/'; this.page.identifier = '/posts/day2_1_python_oop/'; }; /* Lazy loading */ var disqus_observer = new IntersectionObserver(function (entries) { if(entries[0].isIntersecting) { (function () { var d = document, s = d.createElement('script'); s.src = 'https://cow-coding.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); disqus_observer.disconnect(); } }, { threshold: [0] }); disqus_observer.observe(document.querySelector('#disqus_thread')); /* Auto switch theme */ function reloadDisqus() { /* Disqus hasn't been loaded */ if (typeof DISQUS === "undefined") { return; } if (document.readyState == 'complete') { DISQUS.reset({ reload: true, config: disqus_config }); } } const modeToggle = document.querySelector(".mode-toggle"); if (typeof modeToggle !== "undefined") { /* modeToggle.addEventListener('click', reloadDisqus); // not pretty for 'color-scheme' */ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', reloadDisqus); } </script></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center text-muted"><div class="footer-left"><p class="mb-0"> © 2023 <a href="https://github.com/cow-coding">Park Kibum</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/ai-tech/">AI Tech</a> <a class="post-tag" href="/tags/boostcamp/">BoostCamp</a> <a class="post-tag" href="/tags/naver/">NAVER</a> <a class="post-tag" href="/tags/deep-learning/">Deep Learning</a> <a class="post-tag" href="/tags/mlops/">MLOps</a> <a class="post-tag" href="/tags/data-engineering/">Data Engineering</a> <a class="post-tag" href="/tags/project/">Project</a> <a class="post-tag" href="/tags/basic/">Basic</a> <a class="post-tag" href="/tags/python/">Python</a> <a class="post-tag" href="/tags/recommender-system/">Recommender System</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script> /* see: <https://docs.mathjax.org/en/latest/options/input/tex.html#tex-options> */ MathJax = { loader: {load: ['[tex]/color']}, chtml: { scale: 1.2 }, tex: { inlineMath: [ /* start/end delimiter pairs for in-line math */ ['$','$'], ['\\(','\\)'] ], displayMath: [ /* start/end delimiter pairs for display math */ ['$$', '$$'], ['\\[', '\\]'] ], packages: {'[+]':['color']} } }; </script> <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script> <script src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.16.1,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-163727422-1"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-163727422-1'); }); </script>

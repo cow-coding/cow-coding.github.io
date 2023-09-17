@@ -1,0 +1,213 @@
+<!DOCTYPE html><html lang="en" data-mode="light" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="day-prompt" content="days ago"><meta name="hour-prompt" content="hours ago"><meta name="minute-prompt" content="minutes ago"><meta name="justnow-prompt" content="just now"><meta name="generator" content="Jekyll v4.2.1" /><meta property="og:title" content="[Data Structure] Stack(스택)" /><meta property="og:locale" content="en" /><meta name="description" content="Abstract Data Types (추상 자료형) 추상 자료형 (ADTs)는 한마디로 말하면 알고리즘의 요약본이다. ADT는 correctness와 performance를 독립적으로 생각하게 해줄 수 있다. Correctness는 일반적으로 interface라고도 하는데, input이 들어왔을 때, output의 일치 정확도가 얼마나 높은 가를 말한다. Performance는 implementation이라고 하며 time complexity와 같은 것을 말한다. ADT를 짤 때는 해당 알고리즘의 기능만을 고려하며 성능과 자세한 구현을 고려하지 않는다." /><meta property="og:description" content="Abstract Data Types (추상 자료형) 추상 자료형 (ADTs)는 한마디로 말하면 알고리즘의 요약본이다. ADT는 correctness와 performance를 독립적으로 생각하게 해줄 수 있다. Correctness는 일반적으로 interface라고도 하는데, input이 들어왔을 때, output의 일치 정확도가 얼마나 높은 가를 말한다. Performance는 implementation이라고 하며 time complexity와 같은 것을 말한다. ADT를 짤 때는 해당 알고리즘의 기능만을 고려하며 성능과 자세한 구현을 고려하지 않는다." /><link rel="canonical" href="https://cow-coding.github.io/posts/Stack/" /><meta property="og:url" content="https://cow-coding.github.io/posts/Stack/" /><meta property="og:site_name" content="Coding Gallery" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2020-07-04T00:00:00+09:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="[Data Structure] Stack(스택)" /><meta name="twitter:site" content="@twitter_username" /><meta name="google-site-verification" content="TXb5nWUV5Ag0O8EVGMTUS11ZVi7BYOensPMiRdQGNRg" /> <script type="application/ld+json"> {"description":"Abstract Data Types (추상 자료형) 추상 자료형 (ADTs)는 한마디로 말하면 알고리즘의 요약본이다. ADT는 correctness와 performance를 독립적으로 생각하게 해줄 수 있다. Correctness는 일반적으로 interface라고도 하는데, input이 들어왔을 때, output의 일치 정확도가 얼마나 높은 가를 말한다. Performance는 implementation이라고 하며 time complexity와 같은 것을 말한다. ADT를 짤 때는 해당 알고리즘의 기능만을 고려하며 성능과 자세한 구현을 고려하지 않는다.","url":"https://cow-coding.github.io/posts/Stack/","@type":"BlogPosting","headline":"[Data Structure] Stack(스택)","dateModified":"2022-01-14T02:41:57+09:00","datePublished":"2020-07-04T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://cow-coding.github.io/posts/Stack/"},"@context":"https://schema.org"}</script><title>[Data Structure] Stack(스택) | Coding Gallery</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Coding Gallery"><meta name="application-name" content="Coding Gallery"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="https://cdn.jsdelivr.net"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4761810170892865" crossorigin="anonymous"></script><body data-spy="scroll" data-target="#toc" data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end" lang="en"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src="/assets/img/my_img/icebear.jpeg" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Coding Gallery</a></div><div class="site-subtitle font-italic">마침표를 찍고 조금 더 멀리</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <a href="https://github.com/cow-coding" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/twitter_username" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['kbp0237','gmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper" class="row justify-content-center"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>[Data Structure] Stack(스택)</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>[Data Structure] Stack(스택)</h1><div class="post-meta text-muted"><div> By <em> <a href="https://github.com/cow-coding">Park Kibum</a> </em></div><div class="d-flex"><div> <span> Posted <em class="timeago" date="2020-07-04 00:00:00 +0900" data-toggle="tooltip" data-placement="bottom" title="Sat, Jul 4, 2020, 12:00 AM +0900" >Jul 4, 2020</em> </span> <span> Updated <em class="timeago" date="2022-01-14 02:41:57 +0900 " data-toggle="tooltip" data-placement="bottom" title="Fri, Jan 14, 2022, 2:41 AM +0900" >Jan 14, 2022</em> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1794 words"> <em>9 min</em> read</span></div></div></div><div class="post-content"><h1 id="abstract-data-types-추상-자료형">Abstract Data Types (추상 자료형)</h1><p>추상 자료형 (ADTs)는 한마디로 말하면 알고리즘의 요약본이다. ADT는 correctness와 performance를 독립적으로 생각하게 해줄 수 있다.<br /> Correctness는 일반적으로 interface라고도 하는데, input이 들어왔을 때, output의 일치 정확도가 얼마나 높은 가를 말한다.<br /> Performance는 implementation이라고 하며 time complexity와 같은 것을 말한다.<br /> ADT를 짤 때는 해당 알고리즘의 기능만을 고려하며 성능과 자세한 구현을 고려하지 않는다.</p><h1 id="stack-스택">Stack (스택)</h1><h2 id="스택-개념">스택 개념 <a href="#스택-개념" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p>스택의 삽입과 삭제 원리는 Last-In First-Out(LIFO, 후입선출)로 작동한다. 말 그대로 가장 나중에 들어온 데이터가 가장 먼저 나가게 되는 구조이다.<br /> 스택이 활용되는 예시는 아래와 같은 것들이 있다.</p><ul><li>웹페이지 방문기록 (뒤로가기) : 가장 최근의 방문한 페이지를 우선으로 보여준다.<li>텍스트 편집 프로그램의 되돌리기 (ctrl+z)기능<li>C++프로그램에서 코드가 구동되는 시스템 : function call stack이라고 한다.</ul><h2 id="stack-adt">Stack ADT <a href="#stack-adt" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><p>스택의 추상 자료형은 다음과 같다.</p><ul><li>push(object) : object를 삽입한다.<li>object pop() : object중 가장 마지막에 삽입된 것을 제거한다.<li>object top() : 가장 마지막에 있는 object를 return해준다.<li>integer size() : 저장된 object의 개수를 return해준다.<li>boolean empty() : 스택이 비어있는 지 아닌 지를 반환해준다.</ul><p>위의 ADT를 고려해서 stack interface를 구현해보자.</p><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="nc">E</span><span class="p">&gt;</span>
+<span class="k">class</span> <span class="nc">Stack</span> <span class="p">{</span>
+<span class="nl">public:</span>
+  <span class="kt">int</span> <span class="n">size</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+  <span class="kt">bool</span> <span class="n">empty</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+  <span class="k">const</span> <span class="n">E</span><span class="o">&amp;</span> <span class="n">top</span><span class="p">()</span> <span class="k">const</span> <span class="k">throw</span><span class="p">(</span><span class="n">StackEmpty</span><span class="p">);</span>
+  <span class="kt">void</span> <span class="n">push</span><span class="p">(</span><span class="k">const</span> <span class="n">E</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">);</span>
+  <span class="kt">void</span> <span class="n">pop</span><span class="p">()</span> <span class="k">throw</span><span class="p">(</span><span class="n">StackEmpty</span><span class="p">);</span>
+<span class="p">};</span>
+</pre></table></code></div></div><h1 id="stack-implementation-스택-구현">Stack implementation (스택 구현)</h1><p>스택을 구현하는 방식에는 2가지 방식이 있다.</p><ol><li>Array-based stack<li>Linked List-based stack</ol><p>두 가지 방식 모두 구현을 해보겠다. <a href="https://cow-coding.tistory.com">티스토리 블로그</a>에는 아마 링크드 리스트 구현으로만 올라갈 듯 하다.</p><h2 id="array-based-stack-배열-기반-스택">Array-based Stack (배열 기반 스택) <a href="#array-based-stack-배열-기반-스택" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><h3 id="arraystack-prototype">ArrayStack prototype <a href="#arraystack-prototype" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre><td class="rouge-code"><pre><span class="cp">#include &lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">arrayStack</span> <span class="p">{</span>
+<span class="nl">public:</span>
+  <span class="kt">int</span><span class="o">*</span> <span class="n">S</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">capacity</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">t</span><span class="p">;</span>
+
+  <span class="n">arrayStack</span><span class="p">(</span><span class="kt">int</span> <span class="n">capacity</span><span class="p">);</span>
+  <span class="n">arrayStack</span><span class="p">();</span>
+  <span class="kt">int</span> <span class="n">size</span><span class="p">();</span>
+  <span class="kt">bool</span> <span class="n">empty</span><span class="p">();</span>
+  <span class="kt">int</span> <span class="n">top</span><span class="p">();</span>
+  <span class="kt">void</span> <span class="n">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">e</span><span class="p">);</span>
+  <span class="kt">int</span> <span class="n">pop</span><span class="p">();</span>
+<span class="p">};</span>
+</pre></table></code></div></div><p>배열 기반 스택의 프로토타입 함수 종류들이다. 멤버변수에서 포인터 변수인 S는 실제로 저장 역할을 하는 배열이 될 것이다. 배열 기반 스택은 배열의 인덱스를 바꿔주면서 삽입, 삭제, 출력 연산을 진행하는데, 여기서 어떤 값이 가장 최근 인덱스인지를 알려주는 역할을 t변수가 할 것이다. top의 index역할이라고 생각하면 된다. <br /> 자세한 설명은 각 함수 구현과 함께 설명하겠다.</p><h3 id="arraystack-initializer-생성자">arrayStack initializer (생성자) <a href="#arraystack-initializer-생성자" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="n">arrayStack</span><span class="p">(</span><span class="kt">int</span> <span class="n">capacity</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="o">-&gt;</span><span class="n">capacity</span> <span class="o">=</span> <span class="n">capacity</span><span class="p">;</span>
+  <span class="k">this</span><span class="o">-&gt;</span><span class="n">S</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">capacity</span><span class="p">];</span>
+  <span class="k">this</span><span class="o">-&gt;</span><span class="n">t</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>스택의 생성자이다. 구현하려는 스택의 크기를 정해주면 그 크기에 맞춰서 스택이 형성된다.<br /> 아무런 데이터가 없는 경우에는 top의 index를 -1로 지정해준다.</p><h3 id="push-function">push function <a href="#push-function" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">t</span> <span class="o">==</span> <span class="n">capacity</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"stack is full</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="n">t</span><span class="o">++</span><span class="p">;</span>
+  <span class="n">S</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">e</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>push 함수는 구현이 어려운 편이 아니다. 하지만 후에 구현할 링크드 리스트와 다르게 배열구현 스택은 크기가 정해져 있으므로 스택이 꽉 찼을 때의 예외처리를 해 줄 필요가 있다.</p><ol><li>스택이 찼는 지를 확인해준다. 만약 꽉 찼다면 경고해주고 함수를 종료한다.<li>스택이 차지 않았다면 top index인 t를 증가시켜준다.<li>증가된 배열의 t index 위치에 값 e를 넣어준다.</ol><p>스택이 꽉 찼는 지를 확인하는 방법은 어렵지 않다. top index가 배열의 크기보다 1개 작으면 되는 것이다. (왜 1개 작냐 생각이 든다면… 기초부터 다시 공부하는 것이 좋을거다.)</p><h3 id="empty-function">empty function <a href="#empty-function" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="kt">bool</span> <span class="nf">empty</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">t</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>스택이 비었는 지를 확인하는 방법은 쉽다. 앞에서 언급했지만 top의 시작 index값은 -1이다. 즉 t가 -1이라는 것은 스택이 비어있다는 뜻과 같다.</p><h3 id="pop-function">pop function <a href="#pop-function" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre><span class="kt">int</span> <span class="nf">pop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kt">int</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">S</span><span class="p">[</span><span class="n">t</span><span class="p">];</span>
+  <span class="n">t</span><span class="o">--</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">tmp</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>제거연산을 할 때는 반드시 공백여부를 확인해 줘야한다.</p><ol><li>만약 스택이 비어있다면 -1을 반환해준다.<li>비어있지 않다면 우선 기존의 top 값을 저장해준다.<li>top index를 1내려준다.<li>기존의 top값을 반환해준다.</ol><h3 id="size-and-top-function">size and top function <a href="#size-and-top-function" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre><span class="kt">int</span> <span class="nf">size</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">capacity</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">top</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">empty</span><span class="p">())</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="k">else</span>
+    <span class="k">return</span> <span class="n">S</span><span class="p">[</span><span class="n">t</span><span class="p">];</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>두 함수 모두 간단한 구현이다. 그냥 필요한 값을 반환만 해주면 되기 때문다.</p><h2 id="linked-list-based-stack">Linked list-based Stack <a href="#linked-list-based-stack" class="anchor"><i class="fas fa-hashtag"></i></a></h2></h2><h3 id="linkedstack-prototype">LinkedStack prototype <a href="#linkedstack-prototype" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre><td class="rouge-code"><pre><span class="cp">#include &lt;iostream&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">linkedStack</span> <span class="p">{</span>
+<span class="nl">public:</span>
+  <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+  <span class="n">SLinkedList</span><span class="o">*</span> <span class="n">S</span><span class="p">;</span>
+
+  <span class="n">linkedStack</span><span class="p">();</span>
+  <span class="kt">int</span> <span class="n">size</span><span class="p">();</span>
+  <span class="kt">bool</span> <span class="n">empty</span><span class="p">();</span>
+  <span class="kt">int</span> <span class="n">top</span><span class="p">();</span>
+  <span class="kt">void</span> <span class="n">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">e</span><span class="p">);</span>
+  <span class="kt">int</span> <span class="n">pop</span><span class="p">();</span>
+<span class="p">};</span>
+</pre></table></code></div></div><p>linked list와 node에 대한 클래스는 <a href="https://cow-coding.github.io/data%20structure/2020/06/30/DS1/">이전 글</a>을 확인하거나 <a href="https://cow-coding.tistory.com/32">tistory블로그</a>에서 확인할 수 있다. 그 두개 코드가 같이 들어가면 너무 길어진다… 여기서 n은 전체 스택의 원소개수가 된다.</p><h3 id="linkedstack-initializer-생성자">linkedStack initializer (생성자) <a href="#linkedstack-initializer-생성자" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="n">linkedStack</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">this</span><span class="o">-&gt;</span><span class="n">S</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SLinkedList</span><span class="p">;</span>
+  <span class="k">this</span><span class="o">-&gt;</span><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>생성자는 간단하게 초기화만 해준다.</p><h3 id="empty-function-1">empty function <a href="#empty-function-1" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="kt">bool</span> <span class="nf">empty</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>큰 원리는 배열기반과 비슷하다. n이 원소의 개수를 반환해주므로 n이 0개라면 스택이 비어있다는 의미가 되게 된다.</p><h3 id="push-function-1">push function <a href="#push-function-1" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="kt">int</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">S</span><span class="o">-&gt;</span><span class="n">addFront</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+  <span class="n">n</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>push 함수는 링크드 리스트 구현에서 사용한 addFront함수를 활용하면 된다. 스택은 최근에 들어온 값들만 확인하면 되기때문에 Front관련 함수들만 구현해서 활용하면된다.</p><ol><li>링크드 리스트 S에 원소 e를 넣어준다.<li>n 개수를 1 증가시켜준다.</ol><h3 id="pop-function-1">pop function <a href="#pop-function-1" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="kt">int</span> <span class="nf">pop</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+        <span class="n">n</span><span class="o">--</span><span class="p">;</span>
+        <span class="k">return</span> <span class="n">S</span><span class="o">-&gt;</span><span class="n">removeFront</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>스택의 공백 여부만 확인을 잘 해주면된다.</p><ol><li>우선 전체 원소수를 대표하는 n을 줄여준다.<li>그 후 S의 removeFront값을 반환해준다.</ol><h3 id="size-and-top-function-1">size and top function <a href="#size-and-top-function-1" class="anchor"><i class="fas fa-hashtag"></i></a></h3></h3><div class="language-cpp highlighter-rouge"><div class="code-header"> <span data-label-text="Cpp"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre><span class="kt">int</span> <span class="nf">size</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">n</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">top</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">empty</span><span class="p">())</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+  <span class="k">else</span>
+    <span class="k">return</span> <span class="n">S</span><span class="o">-&gt;</span><span class="n">front</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>같은 원리로 동작해주면 된다.</p></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/datastructure/'>DataStructure</a>, <a href='/categories/c/'>C++</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/datastructure/" class="post-tag no-text-decoration" >DataStructure</a> <a href="/tags/stack/" class="post-tag no-text-decoration" >Stack</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=[Data Structure] Stack(스택) - Coding Gallery&url=https://cow-coding.github.io/posts/Stack/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=[Data Structure] Stack(스택) - Coding Gallery&u=https://cow-coding.github.io/posts/Stack/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://telegram.me/share?text=[Data Structure] Stack(스택) - Coding Gallery&url=https://cow-coding.github.io/posts/Stack/" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" title-succeed="Link copied successfully!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Recently Updated</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/coursera2_3/">[MLOps Specialization / Step2] Labeling Data</a><li><a href="/posts/module/">[BoostCamp AI Tech / 심화포스팅] torch.nn.Module 뜯어먹기</a><li><a href="/posts/list/">[Deep Dive Python] 2. List</a><li><a href="/posts/variable/">[Deep Dive Python] 1. Python의 객체와 변수 개념</a><li><a href="/posts/final7/">[BoostCamp AI Tech / Final] Day91 - Airflow setting 및 배치 파이프라인 설계</a></ul></div><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/ai-tech/">AI Tech</a> <a class="post-tag" href="/tags/boostcamp/">BoostCamp</a> <a class="post-tag" href="/tags/naver/">NAVER</a> <a class="post-tag" href="/tags/deep-learning/">Deep Learning</a> <a class="post-tag" href="/tags/mlops/">MLOps</a> <a class="post-tag" href="/tags/data-engineering/">Data Engineering</a> <a class="post-tag" href="/tags/project/">Project</a> <a class="post-tag" href="/tags/basic/">Basic</a> <a class="post-tag" href="/tags/python/">Python</a> <a class="post-tag" href="/tags/recommender-system/">Recommender System</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Contents</div><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="tail-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/LinkedList/"><div class="card-body"> <em class="timeago small" date="2020-06-30 00:00:00 +0900" >Jun 30, 2020</em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>[Data Structure] Linked List (연결 리스트)</h3><div class="text-muted small"><p> Linked list (연결 리스트) 링크드 리스트와 배열 Linked list (연결 리스트)와 가장 많이 비교되는 자료구조에는 Array (배열)가 있다. 두 자료구조 모두 linear order data structure로, 선형 저장구조를 갖고 있다. 선형 저장구조를 갖고 있다는 의미는 데이터 간의 전후관계가 존재한다는 의미와도 같다. 두 ...</p></div></div></a></div><div class="card"> <a href="/posts/AnalysisAlgorithm/"><div class="card-body"> <em class="timeago small" date="2020-07-03 00:00:00 +0900" >Jul 3, 2020</em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>[Data Structure] Analysis of Algorithms (알고리즘 분석)</h3><div class="text-muted small"><p> Algorithm Analysis (알고리즘 분석) Asymtotic Analysis (점근적 분석) 알고리즘을 비교, 분석할 때는 일반적으로 점근적 분석방법을 따른다. 점근적 분석방법은 아래의 과정들로 진행된다. 의사코드 (pseudo code) 연산자 개수 카운트 (primitive operation counting) input s...</p></div></div></a></div><div class="card"> <a href="/posts/Queue/"><div class="card-body"> <em class="timeago small" date="2020-07-05 00:00:00 +0900" >Jul 5, 2020</em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>[Data Structure] Queue(큐)</h3><div class="text-muted small"><p> Queue (큐) 큐 개념 큐의 삽입과 삭제의 원리는 First-In First-Out(FIFO, 선입선출)로 작동한다. 가장 먼저 들어온 데이터가 가장 먼저 나가게된다. 큐의 실제 활용 예시는 다음과 같다. 대기열 공유자원의 접근권한, 순서 멀티 프로그래밍 과정 Queue ADT 큐의 추상자료형은 다음과 같다. enqueue(o...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/AnalysisAlgorithm/" class="btn btn-outline-primary" prompt="Older"><p>[Data Structure] Analysis of Algorithms (알고리즘 분석)</p></a> <a href="/posts/Queue/" class="btn btn-outline-primary" prompt="Newer"><p>[Data Structure] Queue(큐)</p></a></div><div id="disqus_thread" class="pt-2 pb-2"><p class="text-center text-muted small"> Comments powered by <a href="https://disqus.com/">Disqus</a>.</p></div><script type="text/javascript"> var disqus_config = function () { this.page.url = 'https://cow-coding.github.io/posts/Stack/'; this.page.identifier = '/posts/Stack/'; }; /* Lazy loading */ var disqus_observer = new IntersectionObserver(function (entries) { if(entries[0].isIntersecting) { (function () { var d = document, s = d.createElement('script'); s.src = 'https://cow-coding.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); disqus_observer.disconnect(); } }, { threshold: [0] }); disqus_observer.observe(document.querySelector('#disqus_thread')); /* Auto switch theme */ function reloadDisqus() { /* Disqus hasn't been loaded */ if (typeof DISQUS === "undefined") { return; } if (document.readyState == 'complete') { DISQUS.reset({ reload: true, config: disqus_config }); } } const modeToggle = document.querySelector(".mode-toggle"); if (typeof modeToggle !== "undefined") { /* modeToggle.addEventListener('click', reloadDisqus); // not pretty for 'color-scheme' */ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', reloadDisqus); } </script></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center text-muted"><div class="footer-left"><p class="mb-0"> © 2023 <a href="https://github.com/cow-coding">Park Kibum</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/ai-tech/">AI Tech</a> <a class="post-tag" href="/tags/boostcamp/">BoostCamp</a> <a class="post-tag" href="/tags/naver/">NAVER</a> <a class="post-tag" href="/tags/deep-learning/">Deep Learning</a> <a class="post-tag" href="/tags/mlops/">MLOps</a> <a class="post-tag" href="/tags/data-engineering/">Data Engineering</a> <a class="post-tag" href="/tags/project/">Project</a> <a class="post-tag" href="/tags/basic/">Basic</a> <a class="post-tag" href="/tags/python/">Python</a> <a class="post-tag" href="/tags/recommender-system/">Recommender System</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.16.1,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-163727422-1"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-163727422-1'); }); </script>
